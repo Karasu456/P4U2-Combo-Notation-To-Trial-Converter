@@ -44,6 +44,8 @@
                 {"Dash Cancel","CmnFDash\ti\tc"},
                 {"44", "CmnBDash\ti\tc"},
                 {"Backdash", "CmnBDash\ti\tc"},
+                {"IAD", "CmnFAirDash\ti\tc"},
+                {"IAD(Back)", "CmnBAirDash\ti\tc"},
 
                 //Common Macros
                 {"CD", "NmlAtkThrow\tc"},
@@ -60,8 +62,6 @@
                 {"Roll", "CmnSurinuke\ti\tc"},
                 {"2AC", "CmnMiniJump\ti\tc"},
                 {"Hop", "CmnMiniJump\ti\tc"},
-                {"IAD", "CmnFAirDash\ti\tc"},
-                {"IAD(Back)", "CmnBAirDash\ti\tc"},
                 {"Air Turn", "CmnAirTurn\ti\tc"},
                 {"BD", "ReversalAction"},
                 {"Reversal", "ReversalAction"},
