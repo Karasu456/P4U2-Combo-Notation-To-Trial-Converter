@@ -50,8 +50,8 @@
                 {"Throw", "NmlAtkThrow\tc"},
                 {"j.CD", "NmlAtkAirThrow\tc"},
                 {"Air Throw", "NmlAtkAirThrow\tc"},
-                {"AoA(Launch)", "Chudan\tc\r\nChudanOiuchi\tc\r\nChudanFinish\tc\r\nChudanJump\ta\tc"},
-                {"AoA(Blowback)", "Chudan\tc\r\nChudanOiuchi\tc\r\nChudanBlow\tc"},
+                {"AOA(Launch)", "Chudan\tc\r\nChudanOiuchi\tc\r\nChudanFinish\tc\r\nChudanJump\ta\tc"},
+                {"AOA(Blowback)", "Chudan\tc\r\nChudanOiuchi\tc\r\nChudanBlow\tc"},
                 {"Guard Cancel", "NmlAtkCounterAssault\tc"},
                 {"Guard Cancel Roll", "_GCSurinuke\ta\tc\t+CmnGCSurinuke"},
                 {"2AB", "Ashibarai\tc"},
@@ -866,7 +866,7 @@
             {"DP", "AtemiSmoke"},
             {"BD", "AtemiSmoke"},
 
-            //AoA (Air)
+            //AOA (Air)
             {"j.AB", "AirChudan"},
 
             //Bearscrew
