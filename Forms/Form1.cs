@@ -3,6 +3,9 @@ using P4U2_Combo_Notation_To_Trial_Converter.CharacterData;
 using ComboBox = System.Windows.Forms.ComboBox;
 using ToolTip = System.Windows.Forms.ToolTip;
 using System.Reflection;
+using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
+using static System.Windows.Forms.LinkLabel;
 
 namespace P4U2_Combo_Notation_To_Trial_Converter
 {
@@ -318,8 +321,11 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
                 ichigekiReadyCheckBox.Enabled = false;
             }
             else
-            {               
-                ichigekiReadyCheckBox.Enabled = true;
+            {   
+                if(shadowCheckBox.Checked == false)
+                {
+                    ichigekiReadyCheckBox.Enabled = true;
+                }                
             }
         }
         
@@ -3458,9 +3464,182 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
             }
         }
 
+        private void SaveToTextFile()
+        {
+#pragma warning disable CS8604 // Possible null reference argument.
+            List<string> currentProperties = new()
+            {                
+                characterSelectComboBox.SelectedItem.ToString(),
+                comboInputTextBox.Text.ToString(),
+                stagePositionComboBox.SelectedItem.ToString(),
+                enemyBehaviorComboBox.SelectedItem.ToString(),
+                counterComboBox.SelectedItem.ToString(),
+                percentHPTextBox.Text,
+                percentSPTextBox.Text,
+                burstReadyCheckBox.CheckState.ToString(),
+                fullSPCheckBox.CheckState.ToString(),
+                awakeningCheckBox.CheckState.ToString(),
+                ichigekiReadyCheckBox.CheckState.ToString(),
+                playerHPRecoveryCheckBox.CheckState.ToString(),
+                enemyHPRecoveryCheckBox.CheckState.ToString(),
+                playerPanicCheckBox.CheckState.ToString(),
+                playerShockCheckBox.CheckState.ToString(),
+                personaBrokenCheckBox.CheckState.ToString(),
+                enemyFearCheckBox.CheckState.ToString(),
+                noMissCheckBox.CheckState.ToString(),
+                junhudoCheckBox.CheckState.ToString(),
+                shadowCheckBox.CheckState.ToString(),
+                infiniteFrenzyCheckBox.CheckState.ToString(),
+            };
+            if (characterSpecificSettingsPanel.Controls.Count > 0)
+            {
+                foreach (Control activeControl in characterSpecificSettingsPanel.Controls)
+                {
+                    switch (activeControl)
+                    {
+                        case System.Windows.Forms.CheckBox checkbox:
+                            currentProperties.Add(checkbox.CheckState.ToString());
+                            break;
+                        case ComboBox comboBox:
+                            currentProperties.Add(comboBox.SelectedItem.ToString());
+                            break;
+                        case NumericUpDown numericUpDown:
+                            currentProperties.Add(numericUpDown.Value.ToString());
+                            break;
+                    }
+                }
+            }
+#pragma warning restore CS8604 // Possible null reference argument.
+            SaveFileDialog comboSaveFileDialog = new()
+            {
+                DefaultExt = "P4U2 Trial Combo File|*.combo",
+                Filter = "P4U2 Trial Combo File (*.P4U2TrialCombo)|*.P4U2TrialCombo",
+                Title = "Save a P4U2 Trial Combo File"
+            };
+
+            if (comboSaveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using StreamWriter writer = new(comboSaveFileDialog.FileName);
+                foreach (string property in currentProperties)
+                {
+                    writer.WriteLine(property);
+                }
+            }            
+        }
+
+        private static void SetControlValue(Control control, string value)
+        {
+            switch (control)
+            {
+                case TextBox textBox:
+                    textBox.Text = value;
+                    break;
+                case RichTextBox richTextBox:
+                    richTextBox.Text = value;
+                    break;
+                case ComboBox comboBox:
+                    comboBox.SelectedItem = value;
+                    break;
+                case CheckBox checkBox:
+                    checkBox.CheckState = (CheckState)Enum.Parse(typeof(CheckState), value);
+                    break;
+            }
+        }
+
+        private void LoadFromTextFile()
+        {
+            List<string> propertiesToLoad;
+
+            OpenFileDialog comboOpenFileDialog = new()
+            {
+                Filter = "P4U2 Trial Combo File (*.P4U2TrialCombo)|*.P4U2TrialCombo",
+                Title = "Open a P4U2 Trial Combo File",
+                CheckFileExists = true,
+            };
+
+            if(comboOpenFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string[] lines = File.ReadAllLines(comboOpenFileDialog.FileName);
+                propertiesToLoad = new List<string>(lines);
+
+                Control[] controlsToSet = new Control[]
+                {                    
+                    characterSelectComboBox,
+                    comboInputTextBox,
+                    stagePositionComboBox,
+                    enemyBehaviorComboBox,
+                    counterComboBox,
+                    percentHPTextBox,
+                    percentSPTextBox,
+                    burstReadyCheckBox,
+                    fullSPCheckBox,
+                    awakeningCheckBox,
+                    ichigekiReadyCheckBox,
+                    playerHPRecoveryCheckBox,
+                    enemyHPRecoveryCheckBox,
+                    playerPanicCheckBox,
+                    playerShockCheckBox,
+                    personaBrokenCheckBox,
+                    enemyFearCheckBox,
+                    noMissCheckBox,
+                    junhudoCheckBox,
+                    shadowCheckBox,
+                    infiniteFrenzyCheckBox
+                };
+
+                for (int i = 0; i < controlsToSet.Length; i++)
+                {
+                    SetControlValue(controlsToSet[i], propertiesToLoad[i]);
+                }
+
+                if (propertiesToLoad.Count > 21 && characterSpecificSettingsPanel.Controls.Count > 0)
+                {
+                    int propertyIndex = 21;
+                    foreach (Control activeControl in characterSpecificSettingsPanel.Controls)
+                    {
+                        switch (activeControl)
+                        {
+                            case Label:
+                                continue;
+                            case System.Windows.Forms.CheckBox checkbox:
+                                checkbox.CheckState = (CheckState)Enum.Parse(typeof(CheckState), propertiesToLoad[propertyIndex]);
+                                break;
+                            case ComboBox comboBox:
+                                comboBox.SelectedItem = propertiesToLoad[propertyIndex];
+                                break;
+                            case NumericUpDown numericUpDown:
+                                numericUpDown.Value = decimal.TryParse(propertiesToLoad[propertyIndex], out decimal result) ? result : 0;
+                                break;
+                        }
+                        propertyIndex++;
+                    }
+                }
+            }
+        }
+
         private void CharacterSpecificSettingsTimer_Tick(object sender, EventArgs e)
         {
             UpdateCharacterSettings();
+        }
+
+        private void SaveComboToTextFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveToTextFile();
+        }
+
+        private void BtnSaveCombo_Click(object sender, EventArgs e)
+        {
+            SaveToTextFile();
+        }
+
+        private void LoadComboFromTxtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoadFromTextFile();
+        }
+
+        private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

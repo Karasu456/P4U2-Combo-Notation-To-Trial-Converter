@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveComboAsTxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadComboFromTxtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveComboToTextFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -112,30 +112,35 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveComboAsTxtToolStripMenuItem,
+            this.loadComboFromTxtToolStripMenuItem,
             this.saveComboToTextFileToolStripMenuItem,
             this.closeToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // saveComboAsTxtToolStripMenuItem
+            // loadComboFromTxtToolStripMenuItem
             // 
-            this.saveComboAsTxtToolStripMenuItem.Name = "saveComboAsTxtToolStripMenuItem";
-            this.saveComboAsTxtToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.saveComboAsTxtToolStripMenuItem.Text = "Load Combo from Text File";
+            this.loadComboFromTxtToolStripMenuItem.Name = "loadComboFromTxtToolStripMenuItem";
+            this.loadComboFromTxtToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.loadComboFromTxtToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
+            this.loadComboFromTxtToolStripMenuItem.Text = "Load P4U2 Trial Combo";
+            this.loadComboFromTxtToolStripMenuItem.Click += new System.EventHandler(this.LoadComboFromTxtToolStripMenuItem_Click);
             // 
             // saveComboToTextFileToolStripMenuItem
             // 
             this.saveComboToTextFileToolStripMenuItem.Name = "saveComboToTextFileToolStripMenuItem";
-            this.saveComboToTextFileToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.saveComboToTextFileToolStripMenuItem.Text = "Save Combo to Text File";
+            this.saveComboToTextFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveComboToTextFileToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
+            this.saveComboToTextFileToolStripMenuItem.Text = "Save P4U2 Trial Combo";
+            this.saveComboToTextFileToolStripMenuItem.Click += new System.EventHandler(this.SaveComboToTextFileToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
             this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.CloseToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -428,6 +433,7 @@
             this.btnSaveCombo.TabStop = false;
             this.btnSaveCombo.Text = "Save Combo";
             this.btnSaveCombo.UseVisualStyleBackColor = true;
+            this.btnSaveCombo.Click += new System.EventHandler(this.BtnSaveCombo_Click);
             // 
             // characterSpecificSettingsPanel
             // 
@@ -833,7 +839,7 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
-        private ToolStripMenuItem saveComboAsTxtToolStripMenuItem;
+        private ToolStripMenuItem loadComboFromTxtToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem documentationToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
@@ -875,7 +881,6 @@
         private CheckBox shadowCheckBox;
         private TextBox percentSPTextBox;
         private TextBox percentHPTextBox;
-        private RichTextBox comboInputTextBox;
         private Label label9;
         private Panel panel5;
         private Label label10;
@@ -887,5 +892,6 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn trialSettingColumn;
         private DataGridViewTextBoxColumn trialSettingDataColumn;
+        private RichTextBox comboInputTextBox;
     }
 }
