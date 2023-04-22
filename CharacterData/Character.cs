@@ -63,8 +63,8 @@
                 {"2AC", "CmnMiniJump\ti\tc"},
                 {"Hop", "CmnMiniJump\ti\tc"},
                 {"Air Turn", "CmnAirTurn\ti\tc"},
+                {"j.AC", "CmnAirTurn\ti\tc"},
                 {"BD", "ReversalAction"},
-                {"Reversal", "ReversalAction"},
                 {"DP", "ReversalAction"},
                 {"One More Cancel!", "CmnOneMoreCancel\ti\tc"},
                 {"OMC", "CmnOneMoreCancel\ti\tc"},
@@ -283,7 +283,7 @@
             {"j.214AB~B", "MoonsaltMoveAB\t+MoonsaltMoveHaseiAB\ta\tn2miss\r\nMoonsaltSlashB\r\n"},
             {"j.6AB~B", "MoonsaltMoveAB\t+MoonsaltMoveHaseiAB\ta\tn2miss\r\nMoonsaltSlashB\r\n"},
             {"j.4AB~B", "MoonsaltMoveAB\t+MoonsaltMoveHaseiAB\ta\tn2miss\r\nMoonsaltSlashB\r\n"},
-            //Moonsault (B) ~ Crescent Slash (AB)
+            //Moonsault (AB) ~ Crescent Slash (AB)
             {"j.236AB~AB", "MoonsaltMoveAB\t+MoonsaltMoveHaseiAB\nMoonsaltMoveAB\t+MoonsaltMoveHaseiAB"},
             {"j.214AB~AB", "MoonsaltMoveAB\t+MoonsaltMoveHaseiAB\nMoonsaltMoveAB\t+MoonsaltMoveHaseiAB"},
             {"j.6AB~AB", "MoonsaltMoveAB\t+MoonsaltMoveHaseiAB\nMoonsaltMoveAB\t+MoonsaltMoveHaseiAB"},
@@ -327,6 +327,7 @@
             {"236236D", "TatsumakiD"},
             {"236236CD", "TatsumakiCD"},
 
+            //Garudyne (Air)
             {"j.236236C", "TatsumakiC"},
             {"j.236236D", "TatsumakiD"},
             {"j.236236CD", "TatsumakiCD"},
@@ -572,11 +573,11 @@
         {
             //Sensu aka B Normals
             {"5B", "Sensu_5B"},
-            {"5B~B", "Sensu_5B\nSensu_5B2nd"},
+            {"5BB", "Sensu_5B\nSensu_5B2nd"},
             {"6B", "Sensu_5B"},
-            {"6B~B", "Sensu_5B\nSensu_5B2nd"},
+            {"6BB", "Sensu_5B\nSensu_5B2nd"},
             {"4B", "Sensu_5B"},
-            {"4B~B", "Sensu_5B\nSensu_5B2nd"},
+            {"4BB", "Sensu_5B\nSensu_5B2nd"},
             {"2B", "Sensu_2B"},
 
             //Sensu (Air)
@@ -622,7 +623,7 @@
             {"214B", "PersonaFireAttackB"},
             {"214AB", "PersonaFireAttackAB"},
 
-            //Pheonix Flame Swirl
+            //Phoenix Flame Swirl
             {"214214A", "PersonaFireBirdA"},
             {"214214B", "PersonaFireBirdB"},
             {"214214AB", "PersonaFireBirdAB"},
