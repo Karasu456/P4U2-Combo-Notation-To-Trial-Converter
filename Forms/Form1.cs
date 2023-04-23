@@ -3448,7 +3448,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
 
         private void DocumentationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string target = "https://github.com/Karasu456/P4U2-Training-Mode-Recording-Input-Parser/wiki";
+            string target = "https://github.com/Karasu456/P4U2-Combo-Notation-To-Trial-Converter/wiki";
             try
             {
                 System.Diagnostics.Process.Start("cmd", "/c start " + target);
@@ -3543,7 +3543,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
                 case CheckBox checkBox:
                     checkBox.CheckState = (CheckState)Enum.Parse(typeof(CheckState), value);
                     break;
-            }
+            }     
         }
 
         private void LoadFromTextFile()
@@ -3587,32 +3587,58 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
                     infiniteFrenzyCheckBox
                 };
 
-                for (int i = 0; i < controlsToSet.Length; i++)
+                try
                 {
-                    SetControlValue(controlsToSet[i], propertiesToLoad[i]);
-                }
-
-                if (propertiesToLoad.Count > 21 && characterSpecificSettingsPanel.Controls.Count > 0)
-                {
-                    int propertyIndex = 21;
-                    foreach (Control activeControl in characterSpecificSettingsPanel.Controls)
+                    for (int i = 0; i < controlsToSet.Length; i++)
                     {
-                        switch (activeControl)
+                        if (i >= propertiesToLoad.Count)
                         {
-                            case Label:
-                                continue;
-                            case System.Windows.Forms.CheckBox checkbox:
-                                checkbox.CheckState = (CheckState)Enum.Parse(typeof(CheckState), propertiesToLoad[propertyIndex]);
-                                break;
-                            case ComboBox comboBox:
-                                comboBox.SelectedItem = propertiesToLoad[propertyIndex];
-                                break;
-                            case NumericUpDown numericUpDown:
-                                numericUpDown.Value = decimal.TryParse(propertiesToLoad[propertyIndex], out decimal result) ? result : 0;
-                                break;
+                            throw new Exception($"Input data is missing value for control at index {i}");
                         }
-                        propertyIndex++;
+                        if (controlsToSet[i] is ComboBox comboBox)
+                        {
+                            if (!comboBox.Items.Contains(propertiesToLoad[i]))
+                            {
+                                throw new Exception($"Input data contains invalid value for ComboBox at index {i}");
+                            }
+                        }
+                        else if (controlsToSet[i] is System.Windows.Forms.CheckBox checkBox)
+                        {
+                            if (!Enum.TryParse(propertiesToLoad[i], out CheckState state))
+                            {
+                                throw new Exception($"Input data contains invalid value for CheckBox at index {i}");
+                            }
+                        }
+                        SetControlValue(controlsToSet[i], propertiesToLoad[i]);
                     }
+
+                    if (propertiesToLoad.Count > 21 && characterSpecificSettingsPanel.Controls.Count > 0)
+                    {
+                        int propertyIndex = 21;
+                        foreach (Control activeControl in characterSpecificSettingsPanel.Controls)
+                        {
+                            switch (activeControl)
+                            {
+                                case Label:
+                                    continue;
+                                case System.Windows.Forms.CheckBox checkbox:
+                                    checkbox.CheckState = (CheckState)Enum.Parse(typeof(CheckState), propertiesToLoad[propertyIndex]);
+                                    break;
+                                case ComboBox comboBox:
+                                    comboBox.SelectedItem = propertiesToLoad[propertyIndex];
+                                    break;
+                                case NumericUpDown numericUpDown:
+                                    numericUpDown.Value = decimal.TryParse(propertiesToLoad[propertyIndex], out decimal result) ? result : 0;
+                                    break;
+                            }
+                            propertyIndex++;
+                        }
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show($"ERROR!!!\r\n\r\nMissing or incorrectly loaded P4U2 Trial Combo data!\r\nPlease make sure it has not been edited outside the tool!");
+                    return;
                 }
             }
         }

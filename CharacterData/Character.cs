@@ -22,6 +22,8 @@
                 {"2B", "NmlAtk2B\tc"},
                 {"2C", "Persona2C\tc"},
                 {"2D", "Persona2D\tc"},
+                {"IK", "Ichigeki"},
+                {"222CD", "Ichigeki"},
 
                 //Air Buttons
                 {"j.A", "NmlAtkAir5A\tc"},
@@ -70,8 +72,6 @@
                 {"OMC", "CmnOneMoreCancel\ti\tc"},
                 {"One More Burst!", "CmnCancelBurst\ti\tc"},
                 {"OMB", "CmnCancelBurst\ti\tc"},
-                {"IK", "Ichigeki"},
-                {"222CD", "Ichigeki"}
             };
         }
     }
@@ -167,8 +167,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow bc = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -184,7 +182,7 @@
                 workingDictionary_S.Add("5AAAA", "PersonaLowAssaultD\t+StylishAsssault");
                 workingDictionary_S.Add("5AAAAA", "UltimateLaserLandC\t+StylishLaser");
 
-                foreach (KeyValuePair<string, string> pair in bc.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -197,7 +195,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (bc.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -205,7 +203,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in bc.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -364,8 +362,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow yo = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -382,7 +378,7 @@
                 workingDictionary_S.Add("5AAAAA", "KunaiHit_C\t+StylishKunai");
                 workingDictionary_S.Add("5AAAAAA", "Tatsumaki\t+StylishTatsumaki");
 
-                foreach (KeyValuePair<string, string> pair in yo.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -395,7 +391,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (yo.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -403,7 +399,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in yo.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -520,8 +516,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ce = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -537,7 +531,7 @@
                 workingDictionary_S.Add("5AAAAA", "NoutenotoshiA\t+StylishNoutenotoshi");
                 workingDictionary_S.Add("5AAAAAA", "PersonaGodHandC\t+StylishGodHandC");
 
-                foreach (KeyValuePair<string, string> pair in ce.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -550,7 +544,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (ce.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -558,7 +552,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in ce.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -654,8 +648,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow yu = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -670,7 +662,7 @@
                 workingDictionary_S.Add("5AAAA", "LandAgiA\t+StylishAgi");
                 workingDictionary_S.Add("5AAAAA", "AgidineC\t+StylishAgidine");
 
-                foreach (KeyValuePair<string, string> pair in yu.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -683,7 +675,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (yu.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -691,7 +683,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in yu.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -725,15 +717,20 @@
             {"236B", "BusterAttackB"},
             {"236AB", "BusterAttackAB"},
 
+            //Cruel Attack (Air)
+            {"j.236A", "AirBusterAttackA"},
+            {"j.236B", "AirBusterAttackB"},
+            {"j.236AB", "AirBusterAttackAB"},
+
             //Cruel Attack B ~ Bet Ya Can't Take This!
             {"236B~j.214A", "BusterAttackB\nAirMountA"},
             {"236B~j.214B", "BusterAttackB\nAirMountB"},
             {"236B~j.214AB", "BusterAttackB\nAirMountAB"},
 
-            //Cruel Attack (Air)
-            {"j.236A", "AirBusterAttackA"},
-            {"j.236B", "AirBusterAttackB"},
-            {"j.236AB", "AirBusterAttackAB"},
+            //Cruel Attack AB ~ Bet Ya Can't Take This!
+            {"236AB~j.214A", "BusterAttackAB\nAirMountA"},
+            {"236AB~j.214B", "BusterAttackAB\nAirMountB"},
+            {"236AB~j.214AB", "BusterAttackAB\nAirMountAB"},            
 
             //Throw ~ Added Cruel Attack
             {"CD~236A", "NmlAtkThrow\tc\nOiuchi\t+OiuchiA"},
@@ -748,6 +745,10 @@
             {"2AB~236A", "Ashibarai\tc\nOiuchi\t+OiuchiA"},
             {"2AB~236B", "Ashibarai\tc\nOiuchi\t+OiuchiB"},
             {"2AB~236AB", "Ashibarai\tc\nOiuchi\t+OiuchiAB"},
+
+            {"Sweep~236A", "Ashibarai\tc\nOiuchi\t+OiuchiA"},
+            {"Sweep~236B", "Ashibarai\tc\nOiuchi\t+OiuchiB"},
+            {"Sweep~236AB", "Ashibarai\tc\nOiuchi\t+OiuchiAB"},
 
             //This'll Hurt!
             {"214C", "PCommandNageC"},
@@ -813,8 +814,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ka = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -829,7 +828,7 @@
                 workingDictionary_S.Add("5AAAA", "BusterAttackA\t+StylishBusterAttack");
                 workingDictionary_S.Add("5AAAAA", "UltimateCriticalCombo\t+StylishCriticalCombo");
 
-                foreach (KeyValuePair<string, string> pair in ka.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -842,7 +841,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (ka.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -850,7 +849,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in ka.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -1002,8 +1001,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ku = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -1018,7 +1015,7 @@
                 workingDictionary_S.Add("5AAAA", "ScrewDriverB\t|AirScrewDriverB\t+StylishDriver");
                 workingDictionary_S.Add("5AAAAA", "MissileC\t|AirMissileC\t|MissileBomb\t+StylishMissile");
 
-                foreach (KeyValuePair<string, string> pair in ku.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -1031,7 +1028,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (ku.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -1039,7 +1036,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in ku.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -1139,40 +1136,35 @@
             {"236B~C(x5)~6D", "BanditRevolverB\r\nDanganLastB\r\nDanganD"},
             {"236AB~C(x5)~6D", "BanditRevolverAB\r\nDanganLastB\r\nDanganD"},
 
-            //Double Fangs ~ Snipe (6CD)
-            {"236A~6CD", "BanditRevolverA\r\nDanganD"},
-            {"236B~6CD", "BanditRevolverB\r\nDanganD"},
-            {"236AB~6CD", "BanditRevolverAB\r\nDanganD"},
-
             //Double Fangs ~ Snipe (AB) ~ Snipe (A)
-            {"236A~AB~A(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastA"},
-            {"236B~AB~A(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastA"},
-            {"236AB~AB~A(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"236A~(AB)~A(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"236B~(AB)~A(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"236AB~(AB)~A(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastA"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (A) ~ Snipe (D)
-            {"236A~AB~A(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
-            {"236B~AB~A(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
-            {"236AB~AB~A(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"236A~(AB)~A(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"236B~(AB)~A(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"236AB~(AB)~A(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (B)
-            {"236A~AB~B(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
-            {"236B~AB~B(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
-            {"236AB~AB~B(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"236A~(AB)~B(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"236B~(AB)~B(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"236AB~(AB)~B(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (B) ~ Snipe (D)
-            {"236A~AB~B(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
-            {"236B~AB~B(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
-            {"236AB~AB~B(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"236A~(AB)~B(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"236B~(AB)~B(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"236AB~(AB)~B(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (C)
-            {"236A~AB~C(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastB"},
-            {"236B~AB~C(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastB"},
-            {"236AB~AB~C(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"236A~(AB)~C(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"236B~(AB)~C(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"236AB~(AB)~C(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastB"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (C) ~ Snipe (D)
-            {"236A~AB~C(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
-            {"236B~AB~C(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
-            {"236AB~AB~C(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"236A~(AB)~C(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"236B~(AB)~C(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"236AB~(AB)~C(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
             
             ///
             ///
@@ -1233,34 +1225,34 @@
             {"214AB~6CD", "KamaeAB\ta\r\nDanganD"},
 
             //Aim ~ Snipe (AB) ~ Snipe (A)
-            {"214A~AB~A(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
-            {"214B~AB~A(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
-            {"214AB~AB~A(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"214A~(AB)~A(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"214B~(AB)~A(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"214AB~(AB)~A(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
 
             //Aim ~ Snipe (AB) ~ Snipe (A) ~ Snipe (D)
-            {"214A~AB~A(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
-            {"214B~AB~A(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
-            {"214AB~AB~A(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"214A~(AB)~A(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"214B~(AB)~A(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"214AB~(AB)~A(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
 
             //Aim ~ Snipe (AB) ~ Snipe (B)
-            {"214A~AB~B(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
-            {"214B~AB~B(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
-            {"214AB~AB~B(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"214A~(AB)~B(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"214B~(AB)~B(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"214AB~(AB)~B(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
 
             //Aim ~ Snipe (AB) ~ Snipe (B) ~ Snipe (D)
-            {"214A~AB~B(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
-            {"214B~AB~B(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
-            {"214AB~AB~B(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"214A~(AB)~B(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"214B~(AB)~B(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"214AB~(AB)~B(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
 
             //Aim ~ Snipe (AB) ~ Snipe (C)
-            {"214A~AB~C(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
-            {"214B~AB~C(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
-            {"214AB~AB~C(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"214A~(AB)~C(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"214B~(AB)~C(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"214AB~(AB)~C(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
 
             //Aim ~ Snipe (AB) ~ Snipe (C) ~ Snipe (D)
-            {"214A~AB~C(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
-            {"214B~AB~C(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
-            {"214AB~AB~C(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"214A~(AB)~C(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"214B~(AB)~C(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"214AB~(AB)~C(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
 
             //Hair-Trigger Megido
             {"214C", "TrapC"},
@@ -1288,7 +1280,7 @@
             //Hamaon/Mudoon
             {"236236C", "HamaonKill"},
             {"236236D", "MudoonKill"},
-            {"236236CD", "HamaonCDKill"},
+            {"236236CD", "HamaonCDKill"},        
 
             //Raid (A/B) ~ Raid(Ax3) ~ Critical Shot (C)
             {"214214A~(Ax3)~C", "DanganUltimate\r\nDanganUltimate\t+DanganUltimateTama\r\nDanganUltimate\t+DanganUltimateTama\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickC"},
@@ -1297,6 +1289,15 @@
             //Raid (A/B) ~ Raid(Ax3) ~ Critical Shot (D)
             {"214214A~(Ax3)~D", "DanganUltimate\r\nDanganUltimate\t+DanganUltimateTama\r\nDanganUltimate\t+DanganUltimateTama\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickD"},
             {"214214B~(Ax3)~D", "DanganUltimate\r\nDanganUltimate\t+DanganUltimateTama\r\nDanganUltimate\t+DanganUltimateTama\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickD"},
+
+            //Raid (A/B) ~ Critical Shot (C)
+            {"214214A~C", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickC"},
+            {"214214B~C", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickC"},
+
+            //Raid (A/B) ~ Critical Shot (D)
+            {"214214A~C", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickD"},
+            {"214214B~C", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickD"},
+
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
@@ -1306,8 +1307,6 @@
         {            
             if (!dictionariesBuilt)
             {
-                PlayableShadow na = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -1324,7 +1323,7 @@
                 workingDictionary_S.Add("5AAAAA", "DanganLastA\t+StylishDangan");
                 workingDictionary_S.Add("5AAAAAA", "DanganKakushiA\t+StylishKakushi");
 
-                foreach (KeyValuePair<string, string> pair in na.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -1337,7 +1336,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (na.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -1345,7 +1344,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in na.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -1360,17 +1359,17 @@
         private readonly static Dictionary<string, string> workingDictionary = new()
         {
             //5B (Full Charge)
-            {"[5]B", "NmlAtk5Btame"},
-            {"[4]B", "NmlAtk5Btame"},
-            {"[6]B", "NmlAtk5Btame"},
+            {"5[B]", "NmlAtk5Btame"},
+            {"4[B]", "NmlAtk5Btame"},
+            {"6[B]", "NmlAtk5Btame"},
 
             //2B (Full Charge)
-            {"[2]B", "NmlAtk2Btame"},
-            {"[3]B", "NmlAtk2Btame"},
-            {"[1]B", "NmlAtk2Btame"},
+            {"2[B]", "NmlAtk2Btame"},
+            {"3[B]", "NmlAtk2Btame"},
+            {"1[B]", "NmlAtk2Btame"},
 
             //5C (Full Charge)
-            {"[5]C", "NmlAtk5Ctame"},
+            {"5[C]", "NmlAtk5Ctame"},
 
             //2AA and 2AAA
             {"2AA", "NmlAtk2A2nd"},
@@ -1388,10 +1387,12 @@
             //Coup Droit
             {"[4]6A", "TosshinA"},
             {"[4]6B", "TosshinB"},
+            {"[4]6[B]", "TosshinB"},
             {"[4]6AB", "TosshinAB"},
 
             {"[1]6A", "TosshinA"},
             {"[1]6B", "TosshinB"},
+            {"[1]6[B]", "TosshinB"},
             {"[1]6AB", "TosshinAB"},
 
             //Bufula
@@ -1418,9 +1419,9 @@
             {"236236AB", "UltimateRenzokuAB"},
 
             //Myriad Arrows (Full Charge)
-            {"236236A~A(Full Charge)", "UltimateRenzokuA\r\nRenzokufull"},
-            {"236236B~A(Full Charge)", "UltimateRenzokuB\r\nRenzokufull"},
-            {"236236AB~A(Full Charge)", "UltimateRenzokuAB\r\nRenzokufull"},
+            {"236236A(Full Charge)", "RenzokufullA\t+Renzokufull\tnOnly\tNandodemo"},
+            {"236236B(Full Charge)", "RenzokufullB\t+Renzokufull\tnOnly\tNandodemo"},
+            {"236236AB(Full Charge)", "RenzokufullAB\t+Renzokufull\tnOnly\tNandodemo"},
 
             //Bufudyne
             {"236236C", "aref_431_colC"},
@@ -1428,9 +1429,9 @@
             {"236236CD", "aref_431_colCD"},
 
             //Mabufudyne
-            {"214214C", "aref_431_colC"},
-            {"214214D", "aref_431_colD"},
-            {"214214CD", "aref_431_colCD"},
+            {"214214C", "UltimateTsuraraThrough\ta"},
+            {"214214D", "UltimateTsuraraThrough\ta"},
+            {"214214CD", "UltimateTsuraraThroughCD\ta"},
 
             //Mabufudyne (Ice Shots)
             {"C(Ice Shot)", "Tsurara_ShotC"},
@@ -1456,8 +1457,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow mi = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -1474,7 +1473,7 @@
                 workingDictionary_S.Add("5AAAAAA", "TosshinA\t+StylishTosshin");
                 workingDictionary_S.Add("5AAAAAAA", "UltimateRenzokuA\t+StylishRenzoku");
 
-                foreach (KeyValuePair<string, string> pair in mi.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -1487,7 +1486,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (mi.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -1495,7 +1494,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in mi.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -1591,8 +1590,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ak = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -1611,7 +1608,7 @@
                 workingDictionary_S.Add("5AAAAA", "CorkScrewA\t+StylishCork");
                 workingDictionary_S.Add("5AAAAAA", "LightningPlasma_col\t+StylishLightningPlasma");
 
-                foreach (KeyValuePair<string, string> pair in ak.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -1624,7 +1621,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (ak.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -1632,7 +1629,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in ak.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -1764,8 +1761,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ag = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -1783,7 +1778,7 @@
                 workingDictionary_S.Add("5AAAA", "dmy_machinegun_9B\t+StylishCanon");
                 workingDictionary_S.Add("5AAAAA", "PersonaAthenaSurfingD\t|PersonaAirAthenaSurfingD\t+StylishSurfing");
 
-                foreach (KeyValuePair<string, string> pair in ag.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -1796,7 +1791,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (ag.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -1804,7 +1799,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in ag.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     if(pair.Key.Equals("5AA"))
                     {
@@ -1892,7 +1887,7 @@
             {"214214A", "Diarahan"},
             {"214214AB", "DiarahanAB"},
 
-            //Ghastly Whail
+            //Ghastly Wail
             {"214214C", "MoujyaHit_C"},
             {"214214D", "MoujyaHit_D"},
             {"214214CD", "MoujyaHit_CD"},
@@ -1908,9 +1903,7 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow el = new();
-
-                foreach (KeyValuePair<string, string> pair in el.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -1956,19 +1949,19 @@
             {"236AB~6", "RocketPunchAB\r\nRokepanDash\ta"},
 
             //Chain Knuckle ~ Winch Dash ~ Extra Attack A
-            {"236A~6~A", "RocketPunchA\r\nRokepanDash\ta\r\nRokepanHaseiA"},
-            {"236B~6~A", "RocketPunchB\r\nRokepanDash\ta\r\nRokepanHaseiA"},
-            {"236AB~6~A", "RocketPunchAB\r\nRokepanDash\ta\r\nRokepanHaseiA"},
+            {"236A~(6)~A", "RocketPunchA\r\nRokepanDash\ta\r\nRokepanHaseiA"},
+            {"236B~(6)~A", "RocketPunchB\r\nRokepanDash\ta\r\nRokepanHaseiA"},
+            {"236AB~(6)~A", "RocketPunchAB\r\nRokepanDash\ta\r\nRokepanHaseiA"},
 
             //Chain Knuckle ~ Winch Dash ~ Extra Attack B
-            {"236A~6~B", "RocketPunchA\r\nRokepanDash\ta\r\nRokepanHaseiB"},
-            {"236B~6~B", "RocketPunchB\r\nRokepanDash\ta\r\nRokepanHaseiB"},
-            {"236AB~6~B", "RocketPunchAB\r\nRokepanDash\ta\r\nRokepanHaseiB"},
+            {"236A~(6)~B", "RocketPunchA\r\nRokepanDash\ta\r\nRokepanHaseiB"},
+            {"236B~(6)~B", "RocketPunchB\r\nRokepanDash\ta\r\nRokepanHaseiB"},
+            {"236AB~(6)~B", "RocketPunchAB\r\nRokepanDash\ta\r\nRokepanHaseiB"},
 
             //Chain Knuckle ~ Winch Dash ~ Extra Attack AB
-            {"236A~6~AB", "RocketPunchA\r\nRokepanDash\ta\r\nRokepanHaseiAB"},
-            {"236B~6~AB", "RocketPunchB\r\nRokepanDash\ta\r\nRokepanHaseiAB"},
-            {"236AB~6~AB", "RocketPunchAB\r\nRokepanDash\ta\r\nRokepanHaseiAB"},
+            {"236A~(6)~AB", "RocketPunchA\r\nRokepanDash\ta\r\nRokepanHaseiAB"},
+            {"236B~(6)~AB", "RocketPunchB\r\nRokepanDash\ta\r\nRokepanHaseiAB"},
+            {"236AB~(6)~AB", "RocketPunchAB\r\nRokepanDash\ta\r\nRokepanHaseiAB"},
 
             //Guillotine Axe
             {"214A", "AxeAttackA"},
@@ -2027,8 +2020,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow la = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -2037,13 +2028,13 @@
                 //Auto Combo
                 workingDictionary.Add("5AA", "NmlAtk5A2nd_P4U2\tc");
                 workingDictionary.Add("5AAA", "NmlAtk5A3rd_P4U2\tc");
-                workingDictionary.Add("5AAAA", "ScrewDriverA\t|AirScrewDriverA\t+StylishDriver");
-                workingDictionary.Add("5AAAAA", "MissileC\t|AirMissileC\t|MissileBomb\t+StylishMissile");
+                workingDictionary.Add("5AAAA", "AxeAttackA\t+StylishAxeAttack");
+                workingDictionary.Add("5AAAAA", "UltimateTackleD\t+StylishTackle");
                 //S. Auto Combo
-                workingDictionary_S.Add("5AAAA", "ScrewDriverB\t|AirScrewDriverB\t+StylishDriver");
-                workingDictionary_S.Add("5AAAAA", "MissileC\t|AirMissileC\t|MissileBomb\t+StylishMissile");
+                workingDictionary_S.Add("5AAAA", "AxeAttackA\t+StylishAxeAttack");
+                workingDictionary_S.Add("5AAAAA", "UltimateTackleD\t+StylishTackle"); ;
 
-                foreach (KeyValuePair<string, string> pair in la.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -2056,7 +2047,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (la.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -2064,7 +2055,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in la.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
                 }
@@ -2078,6 +2069,12 @@
     {
         private readonly static Dictionary<string, string> workingDictionary = new()
         {
+            //Autocombo
+            {"5AA", "NmlAtk5A2nd\tc"},
+            {"5AAA", "NmlAtk5A3rd\tc"},
+            {"5AAAA", "AxeAttackA\t+StylishAxeAttack"},
+            {"5AAAAA", "PersonaUltimateTemaeNaguriC\t+StylishNaguri"},
+
             //8C
             {"8C", "Persona8C"},
             {"j.8C", "Persona8C"},
@@ -2126,10 +2123,24 @@
             {"[1]6D", "PersonaUshiNageD"},
             {"[1]6CD", "PersonaUshiNageCD"},
 
+            //Massive Slaughter (Air)
+            {"j.[4]6C", "PersonaUshiNageC"},
+            {"j.[4]6D", "PersonaUshiNageD"},
+            {"j.[4]6CD", "PersonaUshiNageCD"},
+
             //Public Execution
             {"[2]8C", "PersonaUshiAirNageC"},
             {"[2]8D", "PersonaUshiAirNageD"},
             {"[2]8CD", "PersonaUshiAirNageCD"},
+
+            {"[1]8C", "PersonaUshiAirNageC"},
+            {"[1]8D", "PersonaUshiAirNageD"},
+            {"[1]8CD", "PersonaUshiAirNageCD"},
+
+            //Public Execution (Air)
+            {"j.[2]8C", "PersonaUshiAirNageC"},
+            {"j.[2]8D", "PersonaUshiAirNageD"},
+            {"j.[2]8CD", "PersonaUshiAirNageCD"},
 
             //Challenge Authority
             {"236236C", "PersonaUltimateTemaeNaguriC"},
@@ -2150,7 +2161,8 @@
             {"214214C", "UltimateProgramC"},
             {"214214D", "UltimateProgramD"},
             {"214214CD", "UltimateProgramCD"},
-            {"Titanomachia(Hit)", "ProgramFinish"},
+
+            {"Titanomachia(Finish)", "ProgramFinish"},
 
             //Titanomachia (Air)
             {"j.214214C", "UltimateProgramC"},
@@ -2161,36 +2173,18 @@
             {"IK(Set)", "IchigekiJunbi"},
             {"222CD(Set)", "IchigekiJunbi"},
         };
-        private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
         private readonly static List<string> invalidActions = new() { "5DD", "j.AB", "j.2A", "j.2C", "j.2D" };
         public static Dictionary<string, string> Dictionary
         {
             get { return workingDictionary; }
         }
-        public static Dictionary<string, string> Dictionary_S
-        {
-            get { return workingDictionary_S; }
-        }
 
         public ShadowLabrys()
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ls = new();
-
-                foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
-                {
-                    workingDictionary_S.Add(pair.Key, pair.Value);
-                }
-
-                //Auto Combo
-                workingDictionary.Add("5AA", "NmlAtk5A2nd\tc");
-                workingDictionary.Add("5AAA", "NmlAtk5A3rd\tc");
-                workingDictionary.Add("5AAAA", "AxeAttackA\t+StylishAxeAttack");
-                workingDictionary.Add("5AAAAA", "PersonaUltimateTemaeNaguriC\t+StylishNaguri");
-
-                foreach (KeyValuePair<string, string> pair in ls.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -2201,19 +2195,6 @@
                     {
                         workingDictionary.Add(pair.Key, pair.Value);
                     }
-                    if (!workingDictionary_S.ContainsKey(pair.Key))
-                    {
-                        if (ls.invalidActions_S.Any(action => pair.Key.Contains(action)))
-                        {
-                            continue;
-                        }
-                        workingDictionary_S.Add(pair.Key, pair.Value);
-                    }
-                }
-
-                foreach (KeyValuePair<string, string> pair in ls.SHADOW_ACTIONS)
-                {
-                    workingDictionary_S.Add(pair.Key, pair.Value);
                 }
 
                 dictionariesBuilt = true;
@@ -2295,7 +2276,7 @@
             {"214D", "eff_MahaGaruD_dmy\ta"},
             {"214CD", "eff_MahaGaruCD_dmy\ta"},
 
-            //Magaru
+            //Magaru (Air)
             {"j.214C", "eff_MahaGaruC_dmy\ta"},
             {"j.214D", "eff_MahaGaruD_dmy\ta"},
             {"j.214CD", "eff_MahaGaruCD_dmy\ta"},
@@ -2365,8 +2346,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow yk = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -2374,7 +2353,7 @@
 
                 //Auto Combos - Added in Dictionary :p
 
-                foreach (KeyValuePair<string, string> pair in yk.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -2387,7 +2366,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (yk.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -2395,7 +2374,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in yk.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     if(pair.Key.Equals("5AA") || pair.Key.Equals("5AAA"))
                     {
@@ -2478,11 +2457,13 @@
             //Super Bunt
             {"214A", "PushBuntA"},
             {"214B", "PushBuntB"},
+            {"214[B]", "PushBuntB"},
             {"214AB", "PushBuntAB"},
 
             //Super Bunt (Clean)
             {"214A(Clean)", "PushBuntAClean"},
             {"214B(Clean)", "PushBuntBClean"},
+            {"214[B](Clean)", "PushBuntB"},
             {"214AB(Clean)", "PushBuntABClean"},
 
             //Deathbound
@@ -2572,8 +2553,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ju = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -2581,7 +2560,7 @@
 
                 //Auto Combo - Added in Dictionary :p
 
-                foreach (KeyValuePair<string, string> pair in ju.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -2594,7 +2573,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (ju.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -2602,7 +2581,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in ju.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     if(pair.Key.Equals("5AA") || pair.Key.Equals("5AAA"))
                     {
@@ -2627,6 +2606,9 @@
             {"5AAAAA", "AssaultA_2nd\t+Stylish2nd"},
             {"5AAAAAA", "nbef_430ShougekihaD\t+StylishShougekiha"},
 
+            //j.[D]
+            {"j.[D]", "PersonaAir5D\tc"},
+
             //Izayoi
             {"DP~DP", "ReversalAction\r\nReversalActionAir"},
             {"DP~BD", "ReversalAction\r\nReversalActionAir"},
@@ -2637,86 +2619,91 @@
             {"j.DP", "ReversalActionAir"},
             {"j.BD", "ReversalActionAir"},
 
+            //Hougetsuzan: Flash Fang
+			{"214A", "AssaultA_1st"},
+            {"214B", "AssaultB_1st"},
+            {"214AB", "AssaultAB_1st"},
+
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ Destructive Fang (A)
-            {"214A~4A~4A", "AssaultA_1st\r\nAssaultA_2nd\r\nAssaultA_3rd"},
+            {"214A~(4A)~4A", "AssaultA_1st\r\nAssaultA_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ Destructive Fang (B)
-            {"214A~4A~4B", "AssaultA_1st\r\nAssaultA_2nd\r\nAssaultB_3rd"},
+            {"214A~(4A)~4B", "AssaultA_1st\r\nAssaultA_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ Destructive Fang (AB)
-            {"214A~4A~4AB", "AssaultA_1st\r\nAssaultA_2nd\r\nAssaultAB_3rd"},
+            {"214A~(4A)~4AB", "AssaultA_1st\r\nAssaultA_2nd\r\nAssaultAB_3rd"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ Destructive Fang (A)
-            {"214A~4B~4A", "AssaultA_1st\r\nAssaultB_2nd\r\nAssaultA_3rd"},
+            {"214A~(4B)~4A", "AssaultA_1st\r\nAssaultB_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ Destructive Fang (B)
-            {"214A~4B~4B", "AssaultA_1st\r\nAssaultB_2nd\r\nAssaultB_3rd"},
+            {"214A~(4B)~4B", "AssaultA_1st\r\nAssaultB_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ Destructive Fang (AB)
-            {"214A~4B~4AB", "AssaultA_1st\r\nAssaultB_2nd\r\nAssaultAB_3rd"},
+            {"214A~(4B)~4AB", "AssaultA_1st\r\nAssaultB_2nd\r\nAssaultAB_3rd"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ Destructive Fang (A)
-            {"214A~4AB~4A", "AssaultA_1st\r\nAssaultAB_2nd\r\nAssaultA_3rd"},
+            {"214A~(4AB)~4A", "AssaultA_1st\r\nAssaultAB_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ Destructive Fang (B)
-            {"214A~4AB~4B", "AssaultA_1st\r\nAssaultAB_2nd\r\nAssaultB_3rd"},
+            {"214A~(4AB)~4B", "AssaultA_1st\r\nAssaultAB_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ Destructive Fang (AB)
-            {"214A~4AB~4AB", "AssaultA_1st\r\nAssaultAB_2nd\r\nAssaultAB_3rd"},
+            {"214A~(4AB)~4AB", "AssaultA_1st\r\nAssaultAB_2nd\r\nAssaultAB_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ Destructive Fang (A)
-            {"214B~4A~4A", "AssaultB_1st\r\nAssaultA_2nd\r\nAssaultA_3rd"},
+            {"214B~(4A)~4A", "AssaultB_1st\r\nAssaultA_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ Destructive Fang (B)
-            {"214B~4A~4B", "AssaultB_1st\r\nAssaultA_2nd\r\nAssaultB_3rd"},
+            {"214B~(4A)~4B", "AssaultB_1st\r\nAssaultA_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ Destructive Fang (AB)
-            {"214B~4A~4AB", "AssaultB_1st\r\nAssaultA_2nd\r\nAssaultAB_3rd"},
+            {"214B~(4A)~4AB", "AssaultB_1st\r\nAssaultA_2nd\r\nAssaultAB_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ Destructive Fang (A)
-            {"214B~4B~4A", "AssaultB_1st\r\nAssaultB_2nd\r\nAssaultA_3rd"},
+            {"214B~(4B)~4A", "AssaultB_1st\r\nAssaultB_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ Destructive Fang (B)
-            {"214B~4B~4B", "AssaultB_1st\r\nAssaultB_2nd\r\nAssaultB_3rd"},
+            {"214B~(4B)~4B", "AssaultB_1st\r\nAssaultB_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ Destructive Fang (AB)
-            {"214B~4B~4AB", "AssaultB_1st\r\nAssaultB_2nd\r\nAssaultAB_3rd"},
+            {"214B~(4B)~4AB", "AssaultB_1st\r\nAssaultB_2nd\r\nAssaultAB_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ Destructive Fang (A)
-            {"214B~4AB~4A", "AssaultB_1st\r\nAssaultAB_2nd\r\nAssaultA_3rd"},
+            {"214B~(4AB)~4A", "AssaultB_1st\r\nAssaultAB_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ Destructive Fang (B)
-            {"214B~4AB~4B", "AssaultB_1st\r\nAssaultAB_2nd\r\nAssaultB_3rd"},
+            {"214B~(4AB)~4B", "AssaultB_1st\r\nAssaultAB_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ Destructive Fang (AB)
-            {"214B~4AB~4AB", "AssaultB_1st\r\nAssaultAB_2nd\r\nAssaultAB_3rd"},
+            {"214B~(4AB)~4AB", "AssaultB_1st\r\nAssaultAB_2nd\r\nAssaultAB_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ Destructive Fang (A)
-            {"214AB~4A~4A", "AssaultAB_1st\r\nAssaultA_2nd\r\nAssaultA_3rd"},
+            {"214AB~(4A)~4A", "AssaultAB_1st\r\nAssaultA_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ Destructive Fang (B)
-            {"214AB~4A~4B", "AssaultAB_1st\r\nAssaultA_2nd\r\nAssaultB_3rd"},
+            {"214AB~(4A)~4B", "AssaultAB_1st\r\nAssaultA_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ Destructive Fang (AB)
-            {"214AB~4A~4AB", "AssaultAB_1st\r\nAssaultA_2nd\r\nAssaultAB_3rd"},
+            {"214AB~(4A)~4AB", "AssaultAB_1st\r\nAssaultA_2nd\r\nAssaultAB_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ Destructive Fang (A)
-            {"214AB~4B~4A", "AssaultAB_1st\r\nAssaultB_2nd\r\nAssaultA_3rd"},
+            {"214AB~(4B)~4A", "AssaultAB_1st\r\nAssaultB_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ Destructive Fang (B)
-            {"214AB~4B~4B", "AssaultAB_1st\r\nAssaultB_2nd\r\nAssaultB_3rd"},
+            {"214AB~(4B)~4B", "AssaultAB_1st\r\nAssaultB_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ Destructive Fang (AB)
-            {"214AB~4B~4AB", "AssaultAB_1st\r\nAssaultB_2nd\r\nAssaultAB_3rd"},
+            {"214AB~(4B)~4AB", "AssaultAB_1st\r\nAssaultB_2nd\r\nAssaultAB_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ Destructive Fang (A)
-            {"214AB~4AB~4A", "AssaultAB_1st\r\nAssaultAB_2nd\r\nAssaultA_3rd"},
+            {"214AB~(4AB)~4A", "AssaultAB_1st\r\nAssaultAB_2nd\r\nAssaultA_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ Destructive Fang (B)
-            {"214AB~4AB~4B", "AssaultAB_1st\r\nAssaultAB_2nd\r\nAssaultB_3rd"},
+            {"214AB~(4AB)~4B", "AssaultAB_1st\r\nAssaultAB_2nd\r\nAssaultB_3rd"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ Destructive Fang (AB)
-            {"214AB~4AB~4AB", "AssaultAB_1st\r\nAssaultAB_2nd\r\nAssaultAB_3rd"},
+            {"214AB~(4AB)~4AB", "AssaultAB_1st\r\nAssaultAB_2nd\r\nAssaultAB_3rd"},
 
             //Survival Knife
             {"236A", "eff_Shot"},
@@ -2769,9 +2756,7 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow nb = new();
-
-                foreach (KeyValuePair<string, string> pair in nb.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -2862,85 +2847,85 @@
             {"236AB~AB", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei"},
 
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ Destructive Fang (A)
-            {"236A~A~A", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236A~(A)~A", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ Destructive Fang (B)
-            {"236A~A~B", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236A~(A)~B", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ Destructive Fang (AB)
-            {"236A~A~AB", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236A~(A)~AB", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ Destructive Fang (A)
-            {"236A~B~A", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236A~(B)~A", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ Destructive Fang (B)
-            {"236A~B~B", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236A~(B)~B", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ Destructive Fang (AB)
-            {"236A~B~AB", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236A~(B)~AB", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ Destructive Fang (A)
-            {"236A~AB~A", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236A~(AB)~A", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ Destructive Fang (B)
-            {"236A~AB~B", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236A~(AB)~B", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ Destructive Fang (AB)
-            {"236A~AB~AB", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236A~(AB)~AB", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ Destructive Fang (A)
-            {"236B~A~A", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236B~(A)~A", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ Destructive Fang (B)
-            {"236B~A~B", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236B~(A)~B", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ Destructive Fang (AB)
-            {"236B~A~AB", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236B~(A)~AB", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ Destructive Fang (A)
-            {"236B~B~A", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236B~(B)~A", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ Destructive Fang (B)
-            {"236B~B~B", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236B~(B)~B", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ Destructive Fang (AB)
-            {"236B~B~AB", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236B~(B)~AB", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ Destructive Fang (A)
-            {"236B~AB~A", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236B~(AB)~A", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ Destructive Fang (B)
-            {"236B~AB~B", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236B~(AB)~B", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ Destructive Fang (AB)
-            {"236B~AB~AB", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236B~(AB)~AB", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ Destructive Fang (A)
-            {"236AB~A~A", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236AB~(A)~A", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ Destructive Fang (B)
-            {"236AB~A~B", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236AB~(A)~B", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ Destructive Fang (AB)
-            {"236AB~A~AB", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236AB~(A)~AB", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ Destructive Fang (A)
-            {"236AB~B~A", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236AB~(B)~A", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ Destructive Fang (B)
-            {"236AB~B~B", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236AB~(B)~B", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ Destructive Fang (AB)
-            {"236AB~B~AB", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236AB~(B)~AB", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ Destructive Fang (A)
-            {"236AB~AB~A", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
+            {"236AB~(AB)~A", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ Destructive Fang (B)
-            {"236AB~AB~B", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
+            {"236AB~(AB)~B", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultB_3rd\t+AssaultB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ Destructive Fang (AB)
-            {"236AB~AB~AB", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
+            {"236AB~(AB)~AB", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nAssaultAB_3rd\t+AssaultAB_3rdHasei"},
 
             //Hougetsuzan: Flash Fang (A) ~ High-Speed Movement (C)
 			{"236A~C", "AssaultA_1st\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
@@ -2970,85 +2955,85 @@
 			{"236AB~CD", "AssaultA_1st\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 						
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ High-Speed Movement (C)
-			{"236A~A~C", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236A~(A)~C", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ High-Speed Movement (D)
-			{"236A~A~D", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236A~(A)~D", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (A) ~ High-Speed Movement (CD)
-			{"236A~A~CD", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236A~(A)~CD", "AssaultA_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 			
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ High-Speed Movement (C)
-			{"236A~B~C", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236A~(B)~C", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ High-Speed Movement (D)
-			{"236A~B~D", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236A~(B)~D", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (B) ~ High-Speed Movement (CD)
-			{"236A~B~CD", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236A~(B)~CD", "AssaultA_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 			
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ High-Speed Movement (C)
-			{"236A~AB~C", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236A~(AB)~C", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ High-Speed Movement (D)
-			{"236A~AB~D", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236A~(AB)~D", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (A) ~ Soaring Fang (AB) ~ High-Speed Movement (CD)
-			{"236A~AB~CD", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236A~(AB)~CD", "AssaultA_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 						
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ High-Speed Movement (C)
-			{"236B~A~C", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236B~(A)~C", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ High-Speed Movement (D)
-			{"236B~A~D", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236B~(A)~D", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (A) ~ High-Speed Movement (CD)
-			{"236B~A~CD", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236B~(A)~CD", "AssaultB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 			
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ High-Speed Movement (C)
-			{"236B~B~C", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236B~(B)~C", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ High-Speed Movement (D)
-			{"236B~B~D", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236B~(B)~D", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (B) ~ High-Speed Movement (CD)
-			{"236B~B~CD", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236B~(B)~CD", "AssaultB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 			
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ High-Speed Movement (C)
-			{"236B~AB~C", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236B~(AB)~C", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ High-Speed Movement (D)
-			{"236B~AB~D", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236B~(AB)~D", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (B) ~ Soaring Fang (AB) ~ High-Speed Movement (CD)
-			{"236B~AB~CD", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236B~(AB)~CD", "AssaultB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 						
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ High-Speed Movement (C)
-			{"236AB~A~C", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236AB~(A)~C", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ High-Speed Movement (D)
-			{"236AB~A~D", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236AB~(A)~D", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (A) ~ High-Speed Movement (CD)
-			{"236AB~A~CD", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236AB~(A)~CD", "AssaultAB_1st\r\nAssaultA_2nd\t+AssaultA_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 			
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ High-Speed Movement (C)
-			{"236AB~B~C", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236AB~(B)~C", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ High-Speed Movement (D)
-			{"236AB~B~D", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236AB~(B)~D", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (B) ~ High-Speed Movement (CD)
-			{"236AB~B~CD", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236AB~(B)~CD", "AssaultAB_1st\r\nAssaultB_2nd\t+AssaultB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 			
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ High-Speed Movement (C)
-			{"236AB~AB~C", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
+			{"236AB~(AB)~C", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashC\t|KousokuDashAirC\ta\tn2miss\t+KousokuDashCHasei"},
 			
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ High-Speed Movement (D)
-			{"236AB~AB~D", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
+			{"236AB~(AB)~D", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashD\t|KousokuDashAirD\ta\tn2miss\t+KousokuDashDHasei"},
 			
 			//Hougetsuzan: Flash Fang (AB) ~ Soaring Fang (AB) ~ High-Speed Movement (CD)
-			{"236AB~AB~CD", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
+			{"236AB~(AB)~CD", "AssaultAB_1st\r\nAssaultAB_2nd\t+AssaultAB_2ndHasei\r\nKousokuDashCD\t|KousokuDashAirCD\ta\tn2miss\t+KousokuDashCDHasei"},
 
             //Hougetsuzan: Soaring Fang (A) ~ Destructive Fang (A)
             {"214A~A", "AssaultA_2nd\t+AssaultA_2ndHasei\r\nAssaultA_3rd\t+AssaultA_3rdHasei"},
@@ -3106,17 +3091,17 @@
 
             //Survival Knife
             {"[4]6A", "eff_Shot"},
-            {"[3]6A", "eff_Shot"},
+            {"[1]6A", "eff_Shot"},
             {"[4]6B", "eff_Shot"},
-            {"[3]6B", "eff_Shot"},
+            {"[1]6B", "eff_Shot"},
             {"[4]6C", "eff_Shot"},
-            {"[3]6C", "eff_Shot"},
+            {"[1]6C", "eff_Shot"},
             {"[4]6D", "eff_Shot"},
-            {"[3]6D", "eff_Shot"},
+            {"[1]6D", "eff_Shot"},
             {"[4]6AB", "eff_ShotSB"},
-            {"[3]6AB", "eff_ShotSB"},
+            {"[1]6AB", "eff_ShotSB"},
             {"[4]6CD", "eff_ShotSB"},
-            {"[3]6CD", "eff_ShotSB"},
+            {"[1]6CD", "eff_ShotSB"},
 
             //Blazing Moon Barrage
             {"236236A", "UltimateAssaultA"},
@@ -3139,9 +3124,7 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow no = new();
-
-                foreach (KeyValuePair<string, string> pair in no.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -3247,8 +3230,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ri = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -3256,7 +3237,7 @@
 
                 //Auto Combo - Added in dictionary :p
 
-                foreach (KeyValuePair<string, string> pair in ri.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -3269,7 +3250,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (ri.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -3277,7 +3258,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in ri.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     if (pair.Key.Equals("5AA") || pair.Key.Equals("5AAA"))
                     {
@@ -3342,20 +3323,20 @@
             {"236D", "KoromaruAssaultD"},
             {"236CD", "KoromaruAssaultCD"},
 
-            //Zan - Hakurou Battouga
+            //Zan - Hakurou Battouga (Air)
             {"j.236C", "KoromaruAssaultC"},
             {"j.236D", "KoromaruAssaultD"},
             {"j.236CD", "KoromaruAssaultCD"},
 
             //Zetsu - Hakurou Battouga
-            {"214C", "KoromaruAirAssaultC\ta"},
-            {"214D", "KoromaruAirAssaultD\ta"},
-            {"214CD", "KoromaruAirAssaultCD\ta"},
+            {"214C", "KoromaruAirAssaultC"},
+            {"214D", "KoromaruAirAssaultD"},
+            {"214CD", "KoromaruAirAssaultCD"},
 
             //Zetsu - Hakurou Battouga (Air)
-            {"j.214C", "KoromaruAirAssaultC\ta"},
-            {"j.214D", "KoromaruAirAssaultD\ta"},
-            {"j.214CD", "KoromaruAirAssaultCD\ta"},
+            {"j.214C", "KoromaruAirAssaultC"},
+            {"j.214D", "KoromaruAirAssaultD"},
+            {"j.214CD", "KoromaruAirAssaultCD"},
 
             //Thunder Reign
             {"236236A", "UltimateSenpukonA"},
@@ -3397,8 +3378,6 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow am = new();
-
                 foreach (KeyValuePair<string, string> pair in workingDictionary.ToList())
                 {
                     workingDictionary_S.Add(pair.Key, pair.Value);
@@ -3406,7 +3385,7 @@
 
                 //Auto Combo - Added in Dictionary :p
 
-                foreach (KeyValuePair<string, string> pair in am.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -3419,7 +3398,7 @@
                     }
                     if (!workingDictionary_S.ContainsKey(pair.Key))
                     {
-                        if (am.invalidActions_S.Any(action => pair.Key.Contains(action)))
+                        if (invalidActions_S.Any(action => pair.Key.Contains(action)))
                         {
                             continue;
                         }
@@ -3427,7 +3406,7 @@
                     }
                 }
 
-                foreach (KeyValuePair<string, string> pair in am.SHADOW_ACTIONS)
+                foreach (KeyValuePair<string, string> pair in SHADOW_ACTIONS)
                 {
                     if (pair.Key.Equals("5AA") || pair.Key.Equals("5AAA"))
                     {
@@ -3520,9 +3499,7 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow ad = new();
-
-                foreach (KeyValuePair<string, string> pair in ad.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -3603,29 +3580,29 @@
             {"214CD", "mr407sb_Atk"},
 
             //Shell of Denial
-            {"236236A", "mr432_CardAtk"},
-            {"236236B", "mr432d_CardAtk"},
-            {"236236AB", "mr432cd_CardAtk"},
+            {"236236A", "mr430_Atk"},
+            {"236236B", "mr430B_Atk"},
+            {"236236AB", "mr430SB_Atk"},
 
-            //ShutupIhateyouyousupidjerk ~ (Hold A)
-            {"236236C~(Hold A)", "mr432_CardAtk\r\nmr432San_Atk"},
-            {"236236D~(Hold A)", "mr432d_CardAtk\r\nmr432San_Atk"},
-            {"236236CD~(Hold A)", "mr432cd_CardAtk\r\nmr432San_Atk"},
+            //ShutupIhateyouyoustupidjerk ~ (Hold A)
+            {"236236C~[A]", "mr432_CardAtk\r\nmr432San_Atk"},
+            {"236236D~[A]", "mr432d_CardAtk\r\nmr432San_Atk"},
+            {"236236CD~[A]", "mr432cd_CardAtk\r\nmr432San_Atk"},
 
-            //ShutupIhateyouyousupidjerk ~ B
-            {"236236C~(Hold B)", "mr432_CardAtk\r\nmr432Cloud_Atk"},
-            {"236236D~(Hold B)", "mr432d_CardAtk\r\nmr432Cloud_Atk"},
-            {"236236CD~(Hold B)", "mr432cd_CardAtk\r\nmr432Cloud_Atk"},
+            //ShutupIhateyouyoustupidjerk ~ B
+            {"236236C~[B]", "mr432_CardAtk\r\nmr432Cloud_Atk"},
+            {"236236D~[B]", "mr432d_CardAtk\r\nmr432Cloud_Atk"},
+            {"236236CD~[B]", "mr432cd_CardAtk\r\nmr432Cloud_Atk"},
 
-            //ShutupIhateyouyousupidjerk ~ C
-            {"236236C~(Hold C)", "mr432_CardAtk\r\nmr432Rain_Atk"},
-            {"236236D~(Hold C)", "mr432d_CardAtk\r\nmr432Rain_Atk"},
-            {"236236CD~(Hold C)", "mr432cd_CardAtk\r\nmr432Rain_Atk"},
+            //ShutupIhateyouyoustupidjerk ~ C
+            {"236236C~[C]", "mr432_CardAtk\r\nmr432Rain_Atk"},
+            {"236236D~[C]", "mr432d_CardAtk\r\nmr432Rain_Atk"},
+            {"236236CD~[C]", "mr432cd_CardAtk\r\nmr432Rain_Atk"},
 
-            //ShutupIhateyouyousupidjerk ~ D
-            {"236236C~(Hold D)", "mr432_CardAtk\r\nmr432Snow_Atk"},
-            {"236236D~(Hold D)", "mr432d_CardAtk\r\nmr432Snow_Atk"},
-            {"236236CD~(Hold D)", "mr432cd_CardAtk\r\nmr432Snow_Atk"},
+            //ShutupIhateyouyoustupidjerk ~ D
+            {"236236C~[D]", "mr432_CardAtk\r\nmr432Snow_Atk"},
+            {"236236D~[D]", "mr432d_CardAtk\r\nmr432Snow_Atk"},
+            {"236236CD~[D]", "mr432cd_CardAtk\r\nmr432Snow_Atk"},
 
             //Shining Arrows
             {"214214C", "UltimateWindC\ta"},
@@ -3656,9 +3633,8 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow mr = new();
 
-                foreach (KeyValuePair<string, string> pair in mr.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
@@ -3729,6 +3705,19 @@
             {"236236B", "PersonaChargeSlashB"},
             {"236236AB", "PersonaChargeSlashAB"},
 
+            //Power Slash ~ Power Slash
+            {"236236A~236236A", "UltimateChargeSlashA\t+PersonaChargeSlashA\ta\r\nUltimateChargeSlashA\t+PersonaChargeSlashA"},
+            {"236236B~236236A", "UltimateChargeSlashB\t+PersonaChargeSlashB\ta\r\nUltimateChargeSlashA\t+PersonaChargeSlashA"},
+            {"236236AB~236236A", "UltimateChargeSlashAB\t+PersonaChargeSlashAB\ta\r\nUltimateChargeSlashA\t+PersonaChargeSlashA"},
+
+            {"236236A~236236B", "UltimateChargeSlashA\t+PersonaChargeSlashA\ta\r\nUltimateChargeSlashB\t+PersonaChargeSlashB"},
+            {"236236B~236236B", "UltimateChargeSlashB\t+PersonaChargeSlashB\ta\r\nUltimateChargeSlashB\t+PersonaChargeSlashB"},
+            {"236236AB~236236B", "UltimateChargeSlashAB\t+PersonaChargeSlashAB\ta\r\nUltimateChargeSlashB\t+PersonaChargeSlashB"},
+
+            {"236236A~236236AB", "UltimateChargeSlashA\t+PersonaChargeSlashA\ta\r\nUltimateChargeSlashAB\t+PersonaChargeSlashAB"},
+            {"236236B~236236AB", "UltimateChargeSlashB\t+PersonaChargeSlashB\ta\r\nUltimateChargeSlashAB\t+PersonaChargeSlashAB"},
+            {"236236AB~236236AB", "UltimateChargeSlashAB\t+PersonaChargeSlashAB\ta\r\nUltimateChargeSlashAB\t+PersonaChargeSlashAB"},
+
             //Power Slash ~ Hassou Tobi
             {"236236A~214214A", "UltimateChargeSlashA\t+PersonaChargeSlashA\ta\r\nPersonaHassouJumpA"},
             {"236236B~214214A", "UltimateChargeSlashB\t+PersonaChargeSlashB\ta\r\nPersonaHassouJumpA"},
@@ -3777,9 +3766,7 @@
         {
             if (!dictionariesBuilt)
             {
-                PlayableShadow nx = new();
-
-                foreach (KeyValuePair<string, string> pair in nx.COMMON_ACTIONS.ToList())
+                foreach (KeyValuePair<string, string> pair in COMMON_ACTIONS.ToList())
                 {
                     if (invalidActions.Any(action => pair.Key.Contains(action)))
                     {
