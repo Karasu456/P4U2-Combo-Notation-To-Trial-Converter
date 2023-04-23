@@ -2477,22 +2477,22 @@
             {"j.214CD", "PersonaDeathBoundAirCD"},
 
             //Inferno Homer ~ Additional (A or C)
-            {"236236A~A", "UltimateGrandSlamA\ta\r\nUltimateGrandSlamABUpper"},
-            {"236236B~A", "UltimateGrandSlamB\ta\r\nUltimateGrandSlamABUpper"},
-            {"236236AB~A", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamABUpper"},
+            {"236236A~A", "UltimateGrandSlamA\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABUpper"},
+            {"236236B~A", "UltimateGrandSlamB\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABUpper\th#"},
+            {"236236AB~A", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABUpper\th#"},
 
-            {"236236A~C", "UltimateGrandSlamA\ta\r\nUltimateGrandSlamABUpper"},
-            {"236236B~C", "UltimateGrandSlamB\ta\r\nUltimateGrandSlamABUpper"},
-            {"236236AB~C", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamABUpper"},
+            {"236236A~C", "UltimateGrandSlamA\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABUpper"},
+            {"236236B~C", "UltimateGrandSlamB\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABUpper\th#"},
+            {"236236AB~C", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABUpper\th#"},
 
             //Inferno Homer ~ Additional (B or D)
-            {"236236A~B", "UltimateGrandSlamA\ta\r\nUltimateGrandSlamABYoko"},
-            {"236236B~B", "UltimateGrandSlamB\ta\r\nUltimateGrandSlamABYoko"},
-            {"236236AB~B", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamABYoko"},
+            {"236236A~B", "UltimateGrandSlamA\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABYoko"},
+            {"236236B~B", "UltimateGrandSlamB\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABYoko\th#"},
+            {"236236AB~B", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABYoko\th#"},
 
-            {"236236A~D", "UltimateGrandSlamA\ta\r\nUltimateGrandSlamABYoko"},
-            {"236236B~D", "UltimateGrandSlamB\ta\r\nUltimateGrandSlamABYoko"},
-            {"236236AB~D", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamABYoko"},
+            {"236236A~D", "UltimateGrandSlamA\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABYoko"},
+            {"236236B~D", "UltimateGrandSlamB\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABYoko\th#"},
+            {"236236AB~D", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamA\t+UltimateGrandSlamABYoko\th#"},
 
             //Comback Grand Slam ~ Additional (A or C)
             {"236236C~A", "UltimateGrandSlamC\ta\r\nUltimateGrandSlamCDUpper"},
@@ -2513,21 +2513,21 @@
             {"236236CD~D", "UltimateGrandSlamAB\ta\r\nUltimateGrandSlamCDYoko"},
 
             //Super Vorpal Bat ~ Additional (A, B, C, D)
-            {"214214C~A", "PersonaUltimateSwingShotC\ta\r\nUltimateSwingShot"},
-            {"214214D~A", "PersonaUltimateSwingShotD\ta\r\nUltimateSwingShot"},
-            {"214214CD~A", "PersonaUltimateSwingShotCD\ta\r\nUltimateSwingShot"},
+            {"214214C~A", "PersonaUltimateSwingShotC\r\nUltimateSwingShotC\t+UltimateSwingShot"},
+            {"214214D~A", "PersonaUltimateSwingShotD\r\nUltimateSwingShotD\t+UltimateSwingShot"},
+            {"214214CD~A", "PersonaUltimateSwingShotCD\r\nUltimateSwingShotCD\t+UltimateSwingShot"},
 
-            {"214214C~B", "PersonaUltimateSwingShotC\ta\r\nUltimateSwingShot"},
-            {"214214D~B", "PersonaUltimateSwingShotD\ta\r\nUltimateSwingShot"},
-            {"214214CD~B", "PersonaUltimateSwingShotCD\ta\r\nUltimateSwingShot"},
+            {"214214C~B", "PersonaUltimateSwingShotC\r\nUltimateSwingShotC\t+UltimateSwingShot"},
+            {"214214D~B", "PersonaUltimateSwingShotD\r\nUltimateSwingShotD\t+UltimateSwingShot"},
+            {"214214CD~B", "PersonaUltimateSwingShotCD\r\nUltimateSwingShotCD\t+UltimateSwingShot"},
 
-            {"214214C~C", "PersonaUltimateSwingShotC\ta\r\nUltimateSwingShot"},
-            {"214214D~C", "PersonaUltimateSwingShotD\ta\r\nUltimateSwingShot"},
-            {"214214CD~C", "PersonaUltimateSwingShotCD\ta\r\nUltimateSwingShot"},
+            {"214214C~C", "PersonaUltimateSwingShotC\r\nUltimateSwingShotC\t+UltimateSwingShot"},
+            {"214214D~C", "PersonaUltimateSwingShotD\r\nUltimateSwingShotD\t+UltimateSwingShot"},
+            {"214214CD~C", "PersonaUltimateSwingShotCD\r\nUltimateSwingShotCD\t+UltimateSwingShot"},
 
-            {"214214C~D", "PersonaUltimateSwingShotC\ta\r\nUltimateSwingShot"},
-            {"214214D~D", "PersonaUltimateSwingShotD\ta\r\nUltimateSwingShot"},
-            {"214214CD~D", "PersonaUltimateSwingShotCD\ta\r\nUltimateSwingShot"},
+            {"214214C~D", "PersonaUltimateSwingShotC\r\nUltimateSwingShotC\t+UltimateSwingShot"},
+            {"214214D~D", "PersonaUltimateSwingShotD\r\nUltimateSwingShotD\t+UltimateSwingShot"},
+            {"214214CD~D", "PersonaUltimateSwingShotCD\r\nUltimateSwingShotCD\t+UltimateSwingShot"},
 
             //Victory Cry
             {"Activate Victory Cry", "KachiOta\ta"},
