@@ -1295,8 +1295,8 @@
             {"214214B~C", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickC"},
 
             //Raid (A/B) ~ Critical Shot (D)
-            {"214214A~C", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickD"},
-            {"214214B~C", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickD"},
+            {"214214A~D", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickD"},
+            {"214214B~D", "DanganUltimate\ta\r\nUltimateWalkingShotKick\t+UltimateWalkingShotKickD"},
 
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
