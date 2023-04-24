@@ -54,6 +54,7 @@
                 {"Throw", "NmlAtkThrow\tc"},
                 {"j.CD", "NmlAtkAirThrow\tc"},
                 {"Air Throw", "NmlAtkAirThrow\tc"},
+                {"AOA", "Chudan\tc" },
                 {"AOA(Launch)", "Chudan\tc\r\nChudanOiuchi\tc\r\nChudanFinish\tc\r\nChudanJump\ta\tc"},
                 {"AOA(Blowback)", "Chudan\tc\r\nChudanOiuchi\tc\r\nChudanBlow\tc"},
                 {"Guard Cancel", "NmlAtkCounterAssault\tc"},
@@ -1846,7 +1847,7 @@
             {"236A(Awakening)", "PersonaMahajiodainKakuseiA"},
 
             //Maziodyne (Awakening/Air)
-            {"j.236A(Awakening)", "PersonaMahajiodainKakuseiA"},
+            //{"j.236A(Awakening)", "PersonaMahajiodainKakuseiA"},
 
             //Mabufudyne
             {"214A", "PersonaMahabufudainA"},
