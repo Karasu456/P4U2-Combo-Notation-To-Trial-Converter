@@ -1562,9 +1562,9 @@
             {"236236AB", "UltimateUpperAB"},
 
             //Thunder Fists
-            {"236236C", "UltimateKokoroeC"},
-            {"236236D", "UltimateKokoroeD"},
-            {"236236CD", "UltimateKokoroe_col"},
+            {"236236C", "UltimateKokoroeC\ta"},
+            {"236236D", "UltimateKokoroeD\ta"},
+            {"236236CD", "UltimateKokoroe_col\ta"},
 
             //Maziodyne
             {"214214C", "LightningPlasma_col"},
