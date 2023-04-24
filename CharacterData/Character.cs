@@ -1880,7 +1880,7 @@
             {"236236C", "Mahanmaon\ta"},
             {"236236D", "Mahamudo_on\ta"},
 
-            //Diarahan
+            //Diarahan            
             {"214214AB", "DiarahanAB\ta"},
 
             //Ghastly Wail
