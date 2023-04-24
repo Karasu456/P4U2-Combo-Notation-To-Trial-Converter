@@ -6,6 +6,7 @@ using System.Reflection;
 using static System.Net.Mime.MediaTypeNames;
 using System.Windows.Forms;
 using static System.Windows.Forms.LinkLabel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace P4U2_Combo_Notation_To_Trial_Converter
 {
@@ -332,8 +333,11 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
         private void CharacterSelectComboBox_SelectedValueChanged(object sender, EventArgs e)
         {
             UpdateCurrentDictionary();
-            CreateCharacterSettings();
             //comboInputTextBox.Text = "";
+            CompileTrialData();
+            ClearCharacterSpecificSettings();
+            CreateCharacterSettings();            
+
         }
 
         private static void CheckBoxChanged(System.Windows.Forms.CheckBox checkBox, string item, List<string> itemList)
@@ -3002,9 +3006,135 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
                             }
 
                             break;
-                    }                   
+                    }
                 }
             }
+        }
+
+
+
+        private void ClearCharacterSpecificSettings()
+        {
+            List<string> characterSpecificSettings = new()
+                {
+                    //Yosuke Sukukaja Setting
+                    "Infinite Sukukaja",
+                    //Chie Power Charge Settings
+                    "Chie Charge Level 0",
+                    "Chie Charge Level 1",
+                    "Chie Charge Level 2",
+                    "Chie Charge Level 3",
+                    //Yukiko Initial Fire Level Settings
+                    "Yukiko Charge Level 0",
+                    "Yukiko Charge Level 1",
+                    "Yukiko Charge Level 2",
+                    "Yukiko Charge Level 3",
+                    "Yukiko Charge Level 4",
+                    "Yukiko Charge Level 5",
+                    "Yukiko Charge Level 6",
+                    "Yukiko Charge Level 7",
+                    "Yukiko Charge Level 8",
+                    "Yukiko Charge Level 9",
+                    //Yukiko Fire Break Fast Recovery Setting
+                    "Fire Break Fast Recovery",
+                    //Teddie Item 1 Settings
+                    "Teddie Item 0",
+                    "Teddie Item MF-06S Brahman",
+                    "Teddie Item Dr. Salt NEO",
+                    "Teddie Item Heavy-Armor Agni",
+                    "Teddie Item Mystery Food X",
+                    "Teddie Item Smart Bomb",
+                    "Teddie Item Turbo Recon Dyaus",
+                    "Teddie Item Oil Drum",
+                    "Teddie Item Motorcycle Key",
+                    "Teddie Item Firecracker",
+                    "Teddie Item Dry Ice",
+                    "Teddie Item Vanish Ball",
+                    "Teddie Item Mobile Model Varna",
+                    "Teddie Item Muscle Drink",
+                    "Teddie Item Pinwheel",
+                    "Teddie Item D-Type Prithvi",
+                    "Teddie Item Ball Lightning",
+                    "Teddie Item Amagiya Bucket",                
+                    //Teddie Item 2 Settings
+                    "Teddie Item2 0",
+                    "Teddie Item2 Firecracker",
+                    "Teddie Item2 Dry Ice",
+                    "Teddie Item2 Vanish Ball",
+                    "Teddie Item2 Mobile Model Varna",
+                    "Teddie Item2 Muscle Drink",
+                    "Teddie Item2 Pinwheel",
+                    "Teddie Item2 D-Type Prithvi",
+                    "Teddie Item2 Ball Lightning",
+                    "Teddie Item2 Amagi Inn Bucket",
+                    "Teddie Item2 MF-06S Brahman",
+                    "Teddie Item2 Dr. Salt NEO",
+                    "Teddie Item2 Heavy-Armor Agni",
+                    "Teddie Item2 Mystery Food X",
+                    "Teddie Item2 Smart Bomb",
+                    "Teddie Item2 Turbo Recon Dyaus",
+                    "Teddie Item2 Oil Drum",
+                    "Teddie Item2 Motorcycle Key",
+                    //Teddie Fix Item 1 Setting
+                    "Fix Item 1",
+                    //Teddie Fix Item 2 Setting
+                    "Fix Item 2",
+                    //Teddie Mystery Teddie SP Fast Recovery Setting
+                    "Mystery Teddie SP Fast Recovery",
+                    //Naoto Fate Settings
+                    "Default Fate",
+                    "Fixed at Zero",
+                    "Fixed at MAX",
+                    //Akihiko Thunder Fists Always On Setting
+                    "Thunder Fists Always On",
+                    //Aigis Max Bullet Count
+                    $"Aigis Max Bullets: {agBullets}",
+                    //Aigis Orgia Fast Recovery Setting
+                    "Orgia Fast Recovery",
+                    //Aigis Ammo Fast Recovery Setting
+                    "Ammo Fast Recovery",
+                    //Labrys Initial Axe Level Setting
+                    "Labrys Initial Axe Level 0",
+                    "Labrys Initial Axe Level 1",
+                    "Labrys Initial Axe Level 2",
+                    "Labrys Initial Axe Level 3",
+                    "Labrys Initial Axe Level 4",
+                    "Labrys Initial Axe Level 5",
+                    //S. Labrys Titanomachia Fast Recovery Setting
+                    "Titanomachia Fast Recovery",   
+                    //Junpei Score Count Setting
+                    $"Junpei Score: {juPoints}",
+                    //Junpei Full Run Count Setting
+                    "Full Run Count",
+                    //Junpei Never Activate Victory Cry Setting
+                    "Never Activate Victory Cry",
+                    //Rise Analyze Always On Setting
+                    "Analyze Always On",
+                    //Rise Tetrakarn/Makarakarn Fast Recovery Setting
+                    "Tetrakarn Fast Recovery",
+                    //Rise Risette Field Fast Recovery Setting
+                    "Risette Field Fast Recovery",
+                    //Ken Koromaru HP Fast Recovery Setting
+                    "Koromaru Fast Recovery",
+                    //Adachi Heat Riser Always On Setting
+                    "Heat Riser Always On",
+                    //Adachi Magatsu Mandala Always On Setting
+                    "Magatsu Mandala Always On",
+                    //Marie Weather Settings
+                    "Sunny Weather",
+                    "Cloudy Weather",
+                    "Rainy Weather",
+                    "Snowy Weather",
+                };
+
+            foreach (string setting in characterSpecificSettings)
+            {
+                if (trialSettings.Contains(setting))
+                {
+                    trialSettings.Remove(setting.ToString());
+                }
+            }
+
         }
 
         private void CreateCharacterSettings()
@@ -3531,7 +3661,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
         {
             switch (control)
             {
-                case TextBox textBox:
+                case System.Windows.Forms.TextBox textBox:
                     textBox.Text = value;
                     break;
                 case RichTextBox richTextBox:
@@ -3546,7 +3676,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
             }     
         }
 
-        private void LoadFromTextFile()
+        private void LoadFromTextFile(object sender, EventArgs e)
         {
             List<string> propertiesToLoad;
 
@@ -3559,6 +3689,8 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
 
             if(comboOpenFileDialog.ShowDialog() == DialogResult.OK)
             {
+                BtnClearCombo_Click(sender, e);
+
                 string[] lines = File.ReadAllLines(comboOpenFileDialog.FileName);
                 propertiesToLoad = new List<string>(lines);
 
@@ -3659,8 +3791,8 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
         }
 
         private void LoadComboFromTxtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LoadFromTextFile();
+        {            
+            LoadFromTextFile(sender, e);
         }
 
         private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
