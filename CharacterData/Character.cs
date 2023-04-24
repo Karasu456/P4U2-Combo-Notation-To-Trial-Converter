@@ -1721,14 +1721,14 @@
             {"j.214CD", "dmy_machinegun_8CD"},
 
             //Goddess Shield
-            {"236236C", "AthenaSurfingC"},
-            {"236236D", "AthenaSurfingD"},
-            {"236236CD", "AthenaSurfingCD"},
+            {"236236C", "PersonaAthenaSurfingC\t|PersonaAirAthenaSurfingC\t+AthenaSurfingC"},
+            {"236236D", "PersonaAthenaSurfingD\t|PersonaAirAthenaSurfingD\t+AthenaSurfingD"},
+            {"236236CD", "PersonaAthenaSurfingCD\t|PersonaAirAthenaSurfingCD\t+AthenaSurfingCD"},
 
             //Goddess Shield (Air)
-            {"j.236236C", "AirAthenaSurfingC"},
-            {"j.236236D", "AirAthenaSurfingD"},
-            {"j.236236CD", "AirAthenaSurfingCD"},
+            {"j.236236C", "PersonaAthenaSurfingC\t|PersonaAirAthenaSurfingC\t+AthenaSurfingC"},
+            {"j.236236D", "PersonaAthenaSurfingD\t|PersonaAirAthenaSurfingD\t+AthenaSurfingD"},
+            {"j.236236CD", "PersonaAthenaSurfingCD\t|PersonaAirAthenaSurfingCD\t+AthenaSurfingCD"},
 
             //Multi-Mounted Machine Gun Orion
             {"j.236236AB", "UltimateAirThrowAB"},
@@ -1739,7 +1739,7 @@
             {"214214CD", "SpearCD"},
 
             //Extreme Orgia Mode (Lol)
-            {"214214AB", "UltimateModeChange"},
+            {"214214AB", "UltimateModeChange\ta"},
 
             //IK
             {"IK", "IchigekiShot"},
