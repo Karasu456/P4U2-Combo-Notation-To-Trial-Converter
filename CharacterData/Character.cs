@@ -1515,8 +1515,7 @@
 
             //Dodge Strike
             {"214A", "AtemiSeikoA"},
-            {"214B", "AtemiSeikoB"},
-            {"214AB", "AtemiSeikoAB"},            
+            {"214AB", "AtemiSeiko"},            
 
             //Corkscrew
             {"6A", "CorkScrewA"},
@@ -1534,22 +1533,22 @@
             {"8AB", "DashUpperAB"},
 
             //Duck
-            {"236C", "DuckingC\t|HaseiDuckingC"},
-            {"236D", "DuckingD\t|HaseiDuckingD"},
-            {"236CD", "DuckingCD\t|HaseiDuckingCD"},
+            {"236C", "DuckingC\t|HaseiDuckingC\ta"},
+            {"236D", "DuckingD\t|HaseiDuckingD\ta"},
+            {"236CD", "DuckingCD\t|HaseiDuckingCD\ta"},
 
-            {"6C", "HaseiDuckingC\t|DuckingC"},
-            {"6D", "HaseiDuckingD\t|DuckingD"},
-            {"6CD", "HaseiDuckingCD\t|DuckingCD"},
+            {"6C", "HaseiDuckingC\t|DuckingC\ta"},
+            {"6D", "HaseiDuckingD\t|DuckingD\ta"},
+            {"6CD", "HaseiDuckingCD\t|DuckingCD\ta"},
 
             //Weave
-            {"214C", "WavingC\t|HaseiWavingC"},
-            {"214D", "WavingD\t|HaseiWavingD"},
-            {"214CD", "WavingCD\t|HaseiWavingCD"},
+            {"214C", "WavingC\t|HaseiWavingC\ta"},
+            {"214D", "WavingD\t|HaseiWavingD\ta"},
+            {"214CD", "WavingCD\t|HaseiWavingCD\ta"},
 
-            {"4C", "HaseiWavingC\t|WavingC"},
-            {"4D", "HaseiWavingD\t|WavingD"},
-            {"4CD", "HaseiWavingCD\t|WavingCD"},
+            {"4C", "HaseiWavingC\t|WavingC\ta"},
+            {"4D", "HaseiWavingD\t|WavingD\ta"},
+            {"4CD", "HaseiWavingCD\t|WavingCD\ta"},
 
             //Assault Dive
             {"j.214A", "AirTosshinA"},
