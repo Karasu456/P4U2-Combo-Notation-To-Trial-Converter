@@ -54,7 +54,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
             {"Kanden", "Player Shock"},
             {"PersonaBreak", "Persona Broken"},
             {"EnemyKyofu", "Enemy Fear"},
-            {"No Miss", "No Miss"},
+            {"NoMiss", "No Miss"},
             {"Junhudo", "Use Every Attack"},
             {"HeatUpForever", "Infinite Frenzy"}
         };
@@ -874,7 +874,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
 
         private void NoMissCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            CheckBoxChanged(noMissCheckBox, "No Miss", trialSettings);
+            CheckBoxChanged(noMissCheckBox, "NoMiss", trialSettings);
             RefreshTrialSettingsDataGridView(trialSettings);
         }
 
