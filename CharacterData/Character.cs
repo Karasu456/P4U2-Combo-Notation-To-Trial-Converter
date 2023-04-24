@@ -3447,7 +3447,7 @@
             //Scared?
             {"214A", "dmy_LowShotA_Atk"},
             {"214B", "dmy_LowShotB_Atk"},
-            {"214AB", "dmy_LowShotAB_Atk"},
+            {"214AB", "dmy_LowShotSB_Atk"},
 
             //Megidola
             {"214C", "MegiDoraC"},
