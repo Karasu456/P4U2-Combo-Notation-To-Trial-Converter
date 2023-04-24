@@ -493,12 +493,10 @@
             //Agneyastra
             {"214214C", "meteoHit_C"},
             {"214214D", "meteoHit_D"},
-            {"214214CD", "meteoHit_CD"},
 
             //Agneyastra (Air)
             {"j.214214C", "meteoHit_C"},
             {"j.214214D", "meteoHit_D"},
-            {"j.214214CD", "meteoHit_CD"},
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
