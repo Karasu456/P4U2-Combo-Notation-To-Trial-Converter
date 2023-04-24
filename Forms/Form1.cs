@@ -333,7 +333,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
         {
             UpdateCurrentDictionary();
             CreateCharacterSettings();
-            comboInputTextBox.Text = "";
+            //comboInputTextBox.Text = "";
         }
 
         private static void CheckBoxChanged(System.Windows.Forms.CheckBox checkBox, string item, List<string> itemList)
