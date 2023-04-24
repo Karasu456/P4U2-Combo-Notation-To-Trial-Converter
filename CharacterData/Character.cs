@@ -1827,8 +1827,8 @@
             {"5BB", "NmlAtk5B2nd"},
             {"5BBB", "NmlAtk5B3rd"},
 
-            //5C (Miss)
-            {"5C(Miss)", "NmlAtk2Cmiss"},
+            //2C (Miss)
+            {"2C(Miss)", "NmlAtk2Cmiss"},
 
             //j.B
             {"j.B", "elef251_CardShotAir"},
