@@ -3437,10 +3437,10 @@
 
             //Calm Down! ~ Pain in the Ass!!
             {"236A~A", "SpecialWalkA\ta\r\nDashAssaultA"},
-            {"236B~A", "SpecialWalkB\ta\r\nDashAssaultA"},
+            {"236B~A", "SpecialWalkB\ta\r\nDashAssaultB"},
             {"236AB~A", "SpecialWalkAB\ta\r\nDashAssaultAB"},
 
-            {"236A~B", "SpecialWalkA\ta\r\nDashAssaultB"},
+            {"236A~B", "SpecialWalkA\ta\r\nDashAssaultA"},
             {"236B~B", "SpecialWalkB\ta\r\nDashAssaultB"},
             {"236AB~B", "SpecialWalkAB\ta\r\nDashAssaultAB"},
 
