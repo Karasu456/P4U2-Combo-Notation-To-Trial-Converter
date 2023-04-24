@@ -3461,13 +3461,13 @@
 
             //Atom Smasher
             {"236236C", "UltimateAirAssaultC_atk"},
-            {"236236D", "UltimateAirAssaultC_atk"},
-            {"236236CD", "UltimateAirAssaultC_atk"},
+            {"236236D", "UltimateAirAssaultD_atk"},
+            {"236236CD", "UltimateAirAssaultCD_atk"},
 
             //Atom Smasher (Air)
             {"j.236236C", "UltimateAirAssaultC_atk"},
-            {"j.236236D", "UltimateAirAssaultC_atk"},
-            {"j.236236CD", "UltimateAirAssaultC_atk"},
+            {"j.236236D", "UltimateAirAssaultD_atk"},
+            {"j.236236CD", "UltimateAirAssaultCD_atk"},
 
             //Heat Riser
             {"236236A", "PersonaUltimateHeatRiserA"},
