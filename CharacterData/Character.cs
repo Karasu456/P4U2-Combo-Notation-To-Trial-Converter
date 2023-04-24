@@ -1863,6 +1863,8 @@
 
             //Maragidyne
             {"214C", "MaharagiHit_C"},
+            {"214D", "MaharagiHit_D"},
+            {"214CD", "MaharagiHit_CD"},
 
             //Debilitate
             {"[2]8A", "Randomizer_col"},
@@ -1870,23 +1872,21 @@
             {"[2]8AB", "Randomizer_colCD"},
 
             //Mind Charge
-            {"236236A", "ConcentrateA"},
-            {"236236B", "ConcentrateB"},
-            {"236236AB", "ConcentrateAB"},
+            {"236236A", "ConcentrateA\ta"},
+            {"236236B", "ConcentrateB\ta"},
+            {"236236AB", "ConcentrateAB\ta"},
 
             //Mahamaon & Mamudoon
-            {"236236C", "Mahanmaon"},
-            {"236236D", "Mahamudo_on"},
-            {"236236CD", "Mahamudo_onCD"},
+            {"236236C", "Mahanmaon\ta"},
+            {"236236D", "Mahamudo_on\ta"},
 
             //Diarahan
-            {"214214A", "Diarahan"},
-            {"214214AB", "DiarahanAB"},
+            {"214214AB", "DiarahanAB\ta"},
 
             //Ghastly Wail
             {"214214C", "MoujyaHit_C"},
             {"214214D", "MoujyaHit_D"},
-            {"214214CD", "MoujyaHit_CD"},
+            {"214214CD", "PersonaMoujya_no_NagekiCD\t+MoujyaHit_CD"},
         };
         private static bool dictionariesBuilt = false;
         private readonly static List<string> invalidActions = new() { "DP", "BD", "5DD", "5B", "j.B","j.BB", "j.AB", "j.2A", "j.2C", "j.2D" };
