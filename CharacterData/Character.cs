@@ -489,7 +489,6 @@
             //Power Charge
             {"236236A", "UltimateChargeA\ta"},
             {"236236B", "UltimateChargeB\ta"},
-            {"236236AB", "UltimateChargeAB\ta"},
 
             //Agneyastra
             {"214214C", "meteoHit_C"},
