@@ -3010,7 +3010,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
         private void CreateCharacterSettings()
         {
             characterSpecificSettingsPanel.Controls.Clear();
-            trialSettings.Clear();
+            //trialSettings.Clear();
             RefreshTrialSettingsDataGridView(trialSettings);
 
             List<Control> controlList = new();
