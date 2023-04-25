@@ -713,22 +713,37 @@
             //Cruel Attack
             {"236A", "BusterAttackA"},
             {"236B", "BusterAttackB"},
-            {"236AB", "BusterAttackAB"},
+            {"236AB", "BusterAttackAB\t|AirBusterAttackAB"},
 
             //Cruel Attack (Air)
             {"j.236A", "AirBusterAttackA"},
             {"j.236B", "AirBusterAttackB"},
-            {"j.236AB", "AirBusterAttackAB"},
+            {"j.236AB", "AirBusterAttackAB\t|BusterAttackAB"},
 
             //Cruel Attack B ~ Bet Ya Can't Take This!
-            {"236B~j.214A", "BusterAttackB\nAirMountA"},
-            {"236B~j.214B", "BusterAttackB\nAirMountB"},
-            {"236B~j.214AB", "BusterAttackB\nAirMountAB"},
+            {"236B~j.214A", "BusterAttackB\ta\nAirMountA"},
+            {"236B~j.214B", "BusterAttackB\ta\nAirMountB"},
+            {"236B~j.214AB", "BusterAttackB\ta\nAirMountAB"},
+
+            //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (A)
+            {"236B~j.214A~236A", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiA"},
+            {"236B~j.214B~236A", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiA"},
+            {"236B~j.214AB~236A", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiA"},
+
+            //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (B)
+            {"236B~j.214A~236B", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiB"},
+            {"236B~j.214B~236B", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiB"},
+            {"236B~j.214AB~236B", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiB"},
+
+            //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (AB)
+            {"236B~j.214A~236AB", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiAB"},
+            {"236B~j.214B~236AB", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiAB"},
+            {"236B~j.214AB~236AB", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiAB"},
 
             //Cruel Attack AB ~ Bet Ya Can't Take This!
-            {"236AB~j.214A", "BusterAttackAB\nAirMountA"},
-            {"236AB~j.214B", "BusterAttackAB\nAirMountB"},
-            {"236AB~j.214AB", "BusterAttackAB\nAirMountAB"},            
+            {"236AB~j.214A", "BusterAttackAB\ta\nAirMountA"},
+            {"236AB~j.214B", "BusterAttackAB\ta\nAirMountB"},
+            {"236AB~j.214AB", "BusterAttackAB\ta\nAirMountAB"},
 
             //Throw ~ Added Cruel Attack
             {"CD~236A", "NmlAtkThrow\tc\nOiuchi\t+OiuchiA"},
@@ -750,8 +765,8 @@
 
             //This'll Hurt!
             {"214C", "PCommandNageC"},
-            {"214D", "PCommandNageD"},
-            {"214CD", "PCommandNageCD"},
+            //{"214D", "PCommandNageD"},
+            //{"214CD", "PAntiAirNageCD"},
 
             //This'll Hurt! ~ Added Cruel Attack
             {"214C~236A", "PCommandNageC\nOiuchi\t+OiuchiA"},
@@ -769,7 +784,7 @@
             //Gotcha!
             {"236C", "PersonaAntiAirC"},
             {"236D", "PersonaAntiAirD"},
-            {"236CD", "PersonaAntiAirCD"},
+            {"236CD", "PAntiAirNageCD"},
 
             //Gotcha! (C) ~ Added Cruel Attack
             {"236C~236A", "PersonaAntiAirC\nOiuchi\t+OiuchiA"},
@@ -783,8 +798,23 @@
 
             //Bet Ya Can't Take This!
             {"j.214A", "AirMountA"},
-            {"j.214B", "AirMountA"},
+            {"j.214B", "AirMountB"},
             {"j.214AB", "AirMountAB"},
+
+            //Bet Ya Can't Take This! ~ Added Cruel Attack (A)
+            {"j.214A~236A", "AirMountA\nOiuchi\t+OiuchiA"},
+            {"j.214B~236A", "AirMountB\nOiuchi\t+OiuchiA"},
+            {"j.214AB~236A", "AirMountAB\nOiuchi\t+OiuchiA"},
+
+            //Bet Ya Can't Take This! ~ Added Cruel Attack (B)
+            {"j.214A~236B", "AirMountA\nOiuchi\t+OiuchiB"},
+            {"j.214B~236B", "AirMountB\nOiuchi\t+OiuchiB"},
+            {"j.214AB~236B", "AirMountAB\nOiuchi\t+OiuchiB"},
+
+            //Bet Ya Can't Take This! ~ Added Cruel Attack (AB)
+            {"j.214A~236AB", "AirMountA\nOiuchi\t+OiuchiAB"},
+            {"j.214B~236AB", "AirMountB\nOiuchi\t+OiuchiAB"},
+            {"j.214AB~236AB", "AirMountAB\nOiuchi\t+OiuchiAB"},
 
             //Ass Whoopin', Tatsumi-Style
             {"236236A", "UltimateCriticalComboA"},
