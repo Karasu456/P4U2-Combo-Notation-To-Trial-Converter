@@ -3323,7 +3323,7 @@
             {"5AAA", "NmlAtk5A3rd\tc\r\nKoromaru5C\tnOnly"},
             {"5AAAA", "NyoisoA\t+NyoisoA_Stylish"},
             {"5AAAAA", "PersonaRaigekisouA"},
-            {"5AAAAAA", "am431_FireatkC\t+Fire_Stylish"},
+            {"5AAAAAA", "am431_FireatkC\t|FireBlessC\t+Fire_Stylish"},
 
             //5C
             {"5C", "Koromaru5C"},
@@ -3386,14 +3386,14 @@
             {"236236AB", "UltimateSenpukonAB"},
 
             //Fire Breath
-            {"236236C", "am431_FireatkC"},
-            {"236236D", "am431_FireatkD"},
-            {"236236CD", "am431_FireatkCD"},
+            {"236236C", "am431_FireatkC\t|FireBlessC"},
+            {"236236D", "am431_FireatkD\t|FireBlessCD"},
+            {"236236CD", "am431_FireatkCD\t|FireBlessCD"},
 
             //Fire Breath (Air)
-            {"j.236236C", "am431_FireatkC"},
-            {"j.236236D", "am431_FireatkD"},
-            {"j.236236CD", "am431_FireatkCD"},
+            {"j.236236C", "am431_FireatkC\t|FireBlessC"},
+            {"j.236236D", "am431_FireatkD\t|FireBlessCD"},
+            {"j.236236CD", "am431_FireatkCD\t|FireBlessCD"},
 
             //Super Gattai! Ultimate Cross
             {"214214A", "UltimateXAttackA"},
