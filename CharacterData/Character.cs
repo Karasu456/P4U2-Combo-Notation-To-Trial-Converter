@@ -726,24 +726,39 @@
             {"236B~j.214AB", "BusterAttackB\ta\nAirMountAB"},
 
             //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (A)
-            {"236B~j.214A~236A", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiA"},
-            {"236B~j.214B~236A", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiA"},
-            {"236B~j.214AB~236A", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiA"},
+            {"236B~(j.214A)~236A", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiA"},
+            {"236B~(j.214B)~236A", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiA"},
+            {"236B~(j.214AB)~236A", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiA"},
 
             //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (B)
-            {"236B~j.214A~236B", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiB"},
-            {"236B~j.214B~236B", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiB"},
-            {"236B~j.214AB~236B", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiB"},
+            {"236B~(j.214A)~236B", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiB"},
+            {"236B~(j.214B)~236B", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiB"},
+            {"236B~(j.214AB)~236B", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiB"},
 
             //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (AB)
-            {"236B~j.214A~236AB", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiAB"},
-            {"236B~j.214B~236AB", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiAB"},
-            {"236B~j.214AB~236AB", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiAB"},
+            {"236B~(j.214A)~236AB", "BusterAttackB\ta\nAirMountA\nOiuchi\t+OiuchiAB"},
+            {"236B~(j.214B)~236AB", "BusterAttackB\ta\nAirMountB\nOiuchi\t+OiuchiAB"},
+            {"236B~(j.214AB)~236AB", "BusterAttackB\ta\nAirMountAB\nOiuchi\t+OiuchiAB"},
 
             //Cruel Attack AB ~ Bet Ya Can't Take This!
             {"236AB~j.214A", "BusterAttackAB\ta\nAirMountA"},
             {"236AB~j.214B", "BusterAttackAB\ta\nAirMountB"},
             {"236AB~j.214AB", "BusterAttackAB\ta\nAirMountAB"},
+
+            //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (A)
+            {"236AB~(j.214A)~236A", "BusterAttackAB\ta\nAirMountA\nOiuchi\t+OiuchiA"},
+            {"236AB~(j.214B)~236A", "BusterAttackAB\ta\nAirMountB\nOiuchi\t+OiuchiA"},
+            {"236AB~(j.214AB)~236A", "BusterAttackAB\ta\nAirMountAB\nOiuchi\t+OiuchiA"},
+
+            //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (B)
+            {"236AB~(j.214A)~236B", "BusterAttackAB\ta\nAirMountA\nOiuchi\t+OiuchiB"},
+            {"236AB~(j.214B)~236B", "BusterAttackAB\ta\nAirMountB\nOiuchi\t+OiuchiB"},
+            {"236AB~(j.214AB)~236B", "BusterAttackAB\ta\nAirMountAB\nOiuchi\t+OiuchiB"},
+
+            //Cruel Attack B ~ Bet Ya Can't Take This! ~ Added Cruel Attack (AB)
+            {"236AB~(j.214A)~236AB", "BusterAttackAB\ta\nAirMountA\nOiuchi\t+OiuchiAB"},
+            {"236AB~(j.214B)~236AB", "BusterAttackAB\ta\nAirMountB\nOiuchi\t+OiuchiAB"},
+            {"236AB~(j.214AB)~236AB", "BusterAttackAB\ta\nAirMountAB\nOiuchi\t+OiuchiAB"},
 
             //Throw ~ Added Cruel Attack
             {"CD~236A", "NmlAtkThrow\tc\nOiuchi\t+OiuchiA"},
