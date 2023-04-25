@@ -2039,7 +2039,7 @@
             //Weaver's Art: Breaking Wheel
             {"214214C", "Oraora"},
             {"214214D", "Oraora"},
-            {"214214CD", "OraoraCD"},
+            {"214214CD", "Oraora\t+OraoraCD"},
 
             //Brutal Impact
             {"214214A", "UltimateFullswingA"},
