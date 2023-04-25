@@ -3607,9 +3607,14 @@
             {"214AB", "PresentForYouSB\ta"},
 
             //It's All Yours ~ Her Name is "Hope (Pandora)"
-            {"214A~C", "PresentForYouA\ta\r\nmr405SB_Atk"},
-            {"214B~C", "PresentForYouB\ta\r\nmr405SB_Atk"},
+            {"214A~C", "mr403_Atk\ta\r\nmr405SB_Atk"},
+            {"214B~C", "mr404_Atk\ta\r\nmr405SB_Atk"},
             {"214AB~C", "PresentForYouSB\ta\r\nmr405SB_Atk"},
+
+            //It's All Yours ~ Stance Cancel
+            {"214A~D", "mr403_Atk\ta\r\nKamaeCancel\ta"},
+            {"214B~D", "mr404_Atk\ta\r\nKamaeCancel\ta"},
+            {"214AB~D", "PresentForYouSB\ta\r\nKamaeCancel\ta"},
 
             //Stigma of Condemnation
             {"236C", "mr406c_Atk"},
@@ -3628,37 +3633,37 @@
 
             //ShutupIhateyouyoustupidjerk ~ (Hold A)
             {"236236C~[A]", "mr432_CardAtk\r\nmr432San_Atk"},
-            {"236236D~[A]", "mr432d_CardAtk\r\nmr432San_Atk"},
-            {"236236CD~[A]", "mr432cd_CardAtk\r\nmr432San_Atk"},
+            {"236236D~[A]", "mr432_CardAtk\t+mr432d_CardAtk\r\nmr432San_Atk"},
+            {"236236CD~[A]", "mr432_CardAtk\t+mr432cd_CardAtk\r\nmr432San_Atk"},
 
             //ShutupIhateyouyoustupidjerk ~ B
             {"236236C~[B]", "mr432_CardAtk\r\nmr432Cloud_Atk"},
-            {"236236D~[B]", "mr432d_CardAtk\r\nmr432Cloud_Atk"},
-            {"236236CD~[B]", "mr432cd_CardAtk\r\nmr432Cloud_Atk"},
+            {"236236D~[B]", "mr432_CardAtk\t+mr432d_CardAtk\r\nmr432Cloud_Atk"},
+            {"236236CD~[B]", "mr432_CardAtk\t+mr432cd_CardAtk\r\nmr432Cloud_Atk"},
 
             //ShutupIhateyouyoustupidjerk ~ C
             {"236236C~[C]", "mr432_CardAtk\r\nmr432Rain_Atk"},
-            {"236236D~[C]", "mr432d_CardAtk\r\nmr432Rain_Atk"},
-            {"236236CD~[C]", "mr432cd_CardAtk\r\nmr432Rain_Atk"},
+            {"236236D~[C]", "mr432_CardAtk\t+mr432d_CardAtk\r\nmr432Rain_Atk"},
+            {"236236CD~[C]", "mr432_CardAtk\t+mr432cd_CardAtk\r\nmr432Rain_Atk"},
 
             //ShutupIhateyouyoustupidjerk ~ D
             {"236236C~[D]", "mr432_CardAtk\r\nmr432Snow_Atk"},
-            {"236236D~[D]", "mr432d_CardAtk\r\nmr432Snow_Atk"},
-            {"236236CD~[D]", "mr432cd_CardAtk\r\nmr432Snow_Atk"},
+            {"236236D~[D]", "mr432_CardAtk\t+mr432d_CardAtk\r\nmr432Snow_Atk"},
+            {"236236CD~[D]", "mr432_CardAtk\t+mr432cd_CardAtk\r\nmr432Snow_Atk"},
 
             //Shining Arrows
             {"214214C", "UltimateWindC\ta"},
-            {"214214D", "UltimateWindD\ta"},
-            {"214214CD", "UltimateWindCD\ta"},
+            {"214214D", "UltimateWindC\t+UltimateWindD\ta"},
+            {"214214CD", "UltimateWindC\t+UltimateWindCD\ta"},
 
             //Shining Arrows (Air)
             {"j.214214C", "UltimateWindC\ta"},
-            {"j.214214D", "UltimateWindD\ta"},
-            {"j.214214CD", "UltimateWindCD\ta"},
+            {"j.214214D", "UltimateWindC\t+UltimateWindD\ta"},
+            {"j.214214CD", "UltimateWindC\t+UltimateWindCD\ta"},
 
             //Shining Arrows Followups
             {"C(Shot)", "mp431_ExWindShot"},
-            {"D(Shot)", "mp431_ExWindShotD"},
+            {"D(Shot)", "mp431_ExWindShotD\t|mp431_ExWindShotC"},
 
             //IK
             {"IK", "Ichigeki_Atk"},
@@ -3712,10 +3717,10 @@
             {"j.BD", "ReversalAction"},
 
             //j.22C
-            {"j.22C", "NmlAtkAir22C"},
+            {"j.22C", "NmlAtkAir22C\ta"},
 
             //j.22D
-            {"j.22D", "NmlAtkAir22D"},
+            {"j.22D", "NmlAtkAir22D\ta"},
 
             //Divine Vacuum
             {"236C", "Shinkuha_YarinageC\t|Shinkuha_TatsumakiC"},
@@ -3784,9 +3789,9 @@
             {"j.236236CD", "Ryuten_atkCD"},
 
             //Mediarahan
-            {"214214C", "UltimateMediarahanC"},
-            {"214214D", "UltimateMediarahanD"},
-            {"214214CD", "UltimateMediarahanCD"},
+            {"214214C", "UltimateMediarahanC\ta"},
+            {"214214D", "UltimateMediarahanD\ta"},
+            {"214214CD", "UltimateMediarahanCD\ta"},
 
             //Hassou Tobi
             {"214214A", "PersonaHassouJumpA"},
