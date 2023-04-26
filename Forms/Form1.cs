@@ -285,7 +285,7 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
                 }
                 else
                 {
-                    currentDictionary = YuNarukami.Dictionary;
+                    currentDictionary = YuNarukami.Dictionary_S;
                 }                
             }
             else

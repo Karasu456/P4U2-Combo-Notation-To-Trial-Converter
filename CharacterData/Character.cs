@@ -1345,6 +1345,14 @@
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
         private readonly static List<string> invalidActions = new() { "5DD", "j.BB", "j.AB", "j.2A", "j.2B", "j.2C", "j.2D" };
+        public static Dictionary<string, string> Dictionary
+        {
+            get { return workingDictionary; }
+        }
+        public static Dictionary<string, string> Dictionary_S
+        {
+            get { return workingDictionary_S; }
+        }
 
         public NaotoShirogane()
         {            
