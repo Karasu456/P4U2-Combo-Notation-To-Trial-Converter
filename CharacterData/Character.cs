@@ -2758,7 +2758,7 @@
             //Survival Knife
             {"236A", "eff_Shot"},
             {"236B", "eff_Shot"},
-            {"236AB", "eff_ShotSB"},
+            {"236AB", "eff_ShotSB\t|effShot"},
 
             //Tsukiyomi
             {"236C", "PersonaWarpC"},
@@ -2791,9 +2791,9 @@
             {"214214AB", "UltimateTaikuuAB"},
 
             //Dream Fog
-            {"214214C", "PersonaAtemiBlack"},
-            {"214214D", "PersonaAtemiBlack"},
-            {"214214CD", "PersonaAtemiBlack"},
+            {"214214C", "AtemiBlackC_Atk\t|AtemiBlackD_Atk\t+PersonaAtemiBlack\ta"},
+            {"214214D", "AtemiBlackC_Atk\t|AtemiBlackD_Atk\t+PersonaAtemiBlack"},
+            {"214214CD", "AtemiBlackC_Atk\t|AtemiBlackD_Atk\t+PersonaAtemiBlack\ta"},
         };
         private static bool dictionariesBuilt = false;
         private readonly static List<string> invalidActions = new() { "DP", "BD", "5DD", "j.BB", "j.AB", "j.2A", "j.2B" };
