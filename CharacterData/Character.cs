@@ -1460,7 +1460,7 @@
             {"[4]6D", "TentarahuD"},
             {"[4]6CD", "TentarahuCD"},
 
-            {"[1]6C", "TentarahuC"},
+            {"[1]6C", "TentarahuC\ta"},
             {"[1]6D", "TentarahuD"},
             {"[1]6CD", "TentarahuCD"},
 
@@ -1485,8 +1485,8 @@
             {"214214CD", "UltimateTsuraraThroughCD\ta"},
 
             //Mabufudyne (Ice Shots)
-            {"C(Ice Shot)", "Tsurara_ShotC"},
-            {"D(Ice Shot)", "Tsurara_ShotD"},
+            {"C(Shot)", "Tsurara_ShotC"},
+            {"D(Shot)", "Tsurara_ShotD"},
 
             //Instant Kill
             {"IK","Ichigeki_Whip"},
