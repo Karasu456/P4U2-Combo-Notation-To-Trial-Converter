@@ -1150,64 +1150,64 @@
             {"236AB~6D", "BanditRevolverAB\r\nDanganD"},
 
             //Double Fangs ~ Snipe (A)
-            {"236A~A(x5)", "BanditRevolverA\r\nDanganLastA"},
-            {"236B~A(x5)", "BanditRevolverB\r\nDanganLastA"},
-            {"236AB~A(x5)", "BanditRevolverAB\r\nDanganLastA"},
+            {"236A~(Ax5)", "BanditRevolverA\r\nDanganLastA"},
+            {"236B~(Ax5)", "BanditRevolverB\r\nDanganLastA"},
+            {"236AB~(Ax5)", "BanditRevolverAB\r\nDanganLastA"},
 
             //Double Fangs ~ Snipe (A) ~ Snipe (D)
-            {"236A~A(x5)~6D", "BanditRevolverA\r\nDanganLastA\r\nDanganD"},
-            {"236B~A(x5)~6D", "BanditRevolverB\r\nDanganLastA\r\nDanganD"},
-            {"236AB~A(x5)~6D", "BanditRevolverAB\r\nDanganLastA\r\nDanganD"},
+            {"236A~(Ax5)~6D", "BanditRevolverA\r\nDanganLastA\r\nDanganD"},
+            {"236B~(Ax5)~6D", "BanditRevolverB\r\nDanganLastA\r\nDanganD"},
+            {"236AB~(Ax5)~6D", "BanditRevolverAB\r\nDanganLastA\r\nDanganD"},
 
             //Double Fangs ~ Snipe (B)
-            {"236A~B(x5)", "BanditRevolverA\r\nDanganHit_Shita"},
-            {"236B~B(x5)", "BanditRevolverB\r\nDanganHit_Shita"},
-            {"236AB~B(x5)", "BanditRevolverAB\r\nDanganHit_Shita"},
+            {"236A~(Bx5)", "BanditRevolverA\r\nDanganHit_Shita"},
+            {"236B~(Bx5)", "BanditRevolverB\r\nDanganHit_Shita"},
+            {"236AB~(Bx5)", "BanditRevolverAB\r\nDanganHit_Shita"},
 
             //Double Fangs ~ Snipe (B) ~ Snipe (D)
-            {"236A~B(x5)~6D", "BanditRevolverA\r\nDanganHit_Shita\r\nDanganD"},
-            {"236B~B(x5)~6D", "BanditRevolverB\r\nDanganHit_Shita\r\nDanganD"},
-            {"236AB~B(x5)~6D", "BanditRevolverAB\r\nDanganHit_Shita\r\nDanganD"},
+            {"236A~(Bx5)~6D", "BanditRevolverA\r\nDanganHit_Shita\r\nDanganD"},
+            {"236B~(Bx5)~6D", "BanditRevolverB\r\nDanganHit_Shita\r\nDanganD"},
+            {"236AB~(Bx5)~6D", "BanditRevolverAB\r\nDanganHit_Shita\r\nDanganD"},
             
             //Double Fangs ~ Snipe (C)
-            {"236A~C(x5)", "BanditRevolverA\r\nDanganLastB"},
-            {"236B~C(x5)", "BanditRevolverB\r\nDanganLastB"},
-            {"236AB~C(x5)", "BanditRevolverAB\r\nDanganLastB"},
+            {"236A~(Cx5)", "BanditRevolverA\r\nDanganLastB"},
+            {"236B~(Cx5)", "BanditRevolverB\r\nDanganLastB"},
+            {"236AB~(Cx5)", "BanditRevolverAB\r\nDanganLastB"},
 
             //Double Fangs ~ Snipe (C) ~ Snipe (D)
-            {"236A~C(x5)~6D", "BanditRevolverA\r\nDanganLastB\r\nDanganD"},
-            {"236B~C(x5)~6D", "BanditRevolverB\r\nDanganLastB\r\nDanganD"},
-            {"236AB~C(x5)~6D", "BanditRevolverAB\r\nDanganLastB\r\nDanganD"},
+            {"236A~(Cx5)~6D", "BanditRevolverA\r\nDanganLastB\r\nDanganD"},
+            {"236B~(Cx5)~6D", "BanditRevolverB\r\nDanganLastB\r\nDanganD"},
+            {"236AB~(Cx5)~6D", "BanditRevolverAB\r\nDanganLastB\r\nDanganD"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (A)
-            {"236A~(AB)~A(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastA"},
-            {"236B~(AB)~A(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastA"},
-            {"236AB~(AB)~A(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"236A~(AB)~(Ax4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"236B~(AB)~(Ax4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"236AB~(AB)~(Ax4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastA"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (A) ~ Snipe (D)
-            {"236A~(AB)~A(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
-            {"236B~(AB)~A(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
-            {"236AB~(AB)~A(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"236A~(AB)~(Ax4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"236B~(AB)~(Ax4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"236AB~(AB)~(Ax4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (B)
-            {"236A~(AB)~B(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
-            {"236B~(AB)~B(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
-            {"236AB~(AB)~B(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"236A~(AB)~(Bx4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"236B~(AB)~(Bx4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"236AB~(AB)~(Bx4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (B) ~ Snipe (D)
-            {"236A~(AB)~B(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
-            {"236B~(AB)~B(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
-            {"236AB~(AB)~B(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"236A~(AB)~(Bx4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"236B~(AB)~(Bx4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"236AB~(AB)~(Bx4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (C)
-            {"236A~(AB)~C(x4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastB"},
-            {"236B~(AB)~C(x4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastB"},
-            {"236AB~(AB)~C(x4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"236A~(AB)~(Cx4)", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"236B~(AB)~(Cx4)", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"236AB~(AB)~(Cx4)", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastB"},
 
             //Double Fangs ~ Snipe (AB) ~ Snipe (C) ~ Snipe (D)
-            {"236A~(AB)~C(x4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
-            {"236B~(AB)~C(x4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
-            {"236AB~(AB)~C(x4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"236A~(AB)~(Cx4)~6D", "BanditRevolverA\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"236B~(AB)~(Cx4)~6D", "BanditRevolverB\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"236AB~(AB)~(Cx4)~6D", "BanditRevolverAB\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
             
             ///
             ///
@@ -1233,34 +1233,34 @@
             {"214AB~6D", "KamaeAB\ta\r\nDanganD"},
 
             //Aim ~ Snipe (A)
-            {"214A~A(x5)", "KamaeA\ta\r\nDanganLastA"},
-            {"214B~A(x5)", "KamaeB\ta\r\nDanganLastA"},
-            {"214AB~A(x5)", "KamaeAB\ta\r\nDanganLastA"},
+            {"214A~(Ax5)", "KamaeA\ta\r\nDanganLastA"},
+            {"214B~(Ax5)", "KamaeB\ta\r\nDanganLastA"},
+            {"214AB~(Ax5)", "KamaeAB\ta\r\nDanganLastA"},
 
             //Aim ~ Snipe (A) ~ Snipe (D)
-            {"214A~A(x5)~6D", "KamaeA\ta\r\nDanganLastA\r\nDanganD"},
-            {"214B~A(x5)~6D", "KamaeB\ta\r\nDanganLastA\r\nDanganD"},
-            {"214AB~A(x5)~6D", "KamaeAB\ta\r\nDanganLastA\r\nDanganD"},
+            {"214A~(Ax5)~6D", "KamaeA\ta\r\nDanganLastA\r\nDanganD"},
+            {"214B~(Ax5)~6D", "KamaeB\ta\r\nDanganLastA\r\nDanganD"},
+            {"214AB~(Ax5)~6D", "KamaeAB\ta\r\nDanganLastA\r\nDanganD"},
 
             //Aim ~ Snipe (B)
-            {"214A~B(x5)", "KamaeA\ta\r\nDanganHit_Shita"},
-            {"214B~B(x5)", "KamaeB\ta\r\nDanganHit_Shita"},
-            {"214AB~B(x5)", "KamaeAB\ta\r\nDanganHit_Shita"},
+            {"214A~(Bx5)", "KamaeA\ta\r\nDanganHit_Shita"},
+            {"214B~(Bx5)", "KamaeB\ta\r\nDanganHit_Shita"},
+            {"214AB~(Bx5)", "KamaeAB\ta\r\nDanganHit_Shita"},
 
             //Aim ~ Snipe (B) ~ Snipe (D)
-            {"214A~B(x5)~6D", "KamaeA\ta\r\nDanganHit_Shita\r\nDanganD"},
-            {"214B~B(x5)~6D", "KamaeB\ta\r\nDanganHit_Shita\r\nDanganD"},
-            {"214AB~B(x5)~6D", "KamaeAB\ta\r\nDanganHit_Shita\r\nDanganD"},
+            {"214A~(Bx5)~6D", "KamaeA\ta\r\nDanganHit_Shita\r\nDanganD"},
+            {"214B~(Bx5)~6D", "KamaeB\ta\r\nDanganHit_Shita\r\nDanganD"},
+            {"214AB~(Bx5)~6D", "KamaeAB\ta\r\nDanganHit_Shita\r\nDanganD"},
 
             //Aim ~ Snipe (C)
-            {"214A~C(x5)", "KamaeA\ta\r\nDanganLastB"},
-            {"214B~C(x5)", "KamaeB\ta\r\nDanganLastB"},
-            {"214AB~C(x5)", "KamaeAB\ta\r\nDanganLastB"},
+            {"214A~(Cx5)", "KamaeA\ta\r\nDanganLastB"},
+            {"214B~(Cx5)", "KamaeB\ta\r\nDanganLastB"},
+            {"214AB~(Cx5)", "KamaeAB\ta\r\nDanganLastB"},
 
             //Aim ~ Snipe (C) ~ Snipe (D)
-            {"214A~C(x5)~6D", "KamaeA\ta\r\nDanganLastB\r\nDanganD"},
-            {"214B~C(x5)~6D", "KamaeB\ta\r\nDanganLastB\r\nDanganD"},
-            {"214AB~C(x5)~6D", "KamaeAB\ta\r\nDanganLastB\r\nDanganD"},
+            {"214A~(Cx5)~6D", "KamaeA\ta\r\nDanganLastB\r\nDanganD"},
+            {"214B~(Cx5)~6D", "KamaeB\ta\r\nDanganLastB\r\nDanganD"},
+            {"214AB~(Cx5)~6D", "KamaeAB\ta\r\nDanganLastB\r\nDanganD"},
 
             //Aim ~ Snipe (6CD)
             {"214A~6CD", "KamaeA\ta\r\nDanganD"},
@@ -1268,34 +1268,34 @@
             {"214AB~6CD", "KamaeAB\ta\r\nDanganD"},
 
             //Aim ~ Snipe (AB) ~ Snipe (A)
-            {"214A~(AB)~A(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
-            {"214B~(AB)~A(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
-            {"214AB~(AB)~A(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"214A~(AB)~(Ax4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"214B~(AB)~(Ax4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
+            {"214AB~(AB)~(Ax4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastA"},
 
             //Aim ~ Snipe (AB) ~ Snipe (A) ~ Snipe (D)
-            {"214A~(AB)~A(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
-            {"214B~(AB)~A(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
-            {"214AB~(AB)~A(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"214A~(AB)~(Ax4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"214B~(AB)~(Ax4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
+            {"214AB~(AB)~(Ax4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastA\r\nDanganD"},
 
             //Aim ~ Snipe (AB) ~ Snipe (B)
-            {"214A~(AB)~B(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
-            {"214B~(AB)~B(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
-            {"214AB~(AB)~B(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"214A~(AB)~(Bx4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"214B~(AB)~(Bx4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
+            {"214AB~(AB)~(Bx4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita"},
 
             //Aim ~ Snipe (AB) ~ Snipe (B) ~ Snipe (D)
-            {"214A~(AB)~B(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
-            {"214B~(AB)~B(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
-            {"214AB~(AB)~B(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"214A~(AB)~(Bx4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"214B~(AB)~(Bx4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
+            {"214AB~(AB)~(Bx4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganHit_Shita\r\nDanganD"},
 
             //Aim ~ Snipe (AB) ~ Snipe (C)
-            {"214A~(AB)~C(x4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
-            {"214B~(AB)~C(x4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
-            {"214AB~(AB)~C(x4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"214A~(AB)~(Cx4)", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"214B~(AB)~(Cx4)", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
+            {"214AB~(AB)~(Cx4)", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastB"},
 
             //Aim ~ Snipe (AB) ~ Snipe (C) ~ Snipe (D)
-            {"214A~(AB)~C(x4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
-            {"214B~(AB)~C(x4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
-            {"214AB~(AB)~C(x4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"214A~(AB)~(Cx4)~6D", "KamaeA\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"214B~(AB)~(Cx4)~6D", "KamaeB\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
+            {"214AB~(AB)~(Cx4)~6D", "KamaeAB\ta\r\nDanganLastAB\th#\r\nDanganLastB\r\nDanganD"},
 
             //Hair-Trigger Megido
             {"214C", "TrapC"},
