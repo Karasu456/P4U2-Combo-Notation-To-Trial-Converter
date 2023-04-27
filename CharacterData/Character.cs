@@ -342,7 +342,8 @@
             {"5AAA(Sukukaja)", "Sukukaja5A_3rd"},
             {"5AAAA(Sukukaja)", "Sukukaja5A_4th"},
             {"5AAAAA(Sukukaja)", "Sukukaja5A_Finish"},
-            {"5AAAAAA(Sukukaja)", ""},
+            {"5AAAAAA(Sukukaja)", "KakeagariA\t+StylishKakeagari"},
+            {"5AAAAAAA(Sukukaja)", "UltimateKunaiD\t+StylishUltimateKunai"},
             
             //Shippu - Nagareboshi
             {"214214C(Shippu)", "UltimateKunaiC"},
@@ -941,23 +942,23 @@
             //Teddivision
             {"236C", "TvHit_C"},
             {"236D", "TvHit_D"},
-            {"236CD", "TvHit_CD"},
+            {"236CD", "Tvwarp\t+TvHit_CD"},
 
             //Teddivision ~ Teddie Warp
             {"236C~236C", "TvHit_C\nTVWarpC\ta"},
-            {"236C~236D", "TvHit_D\nTVWarpD\ta"},
-            {"236C~236CD", "TvHit_CD\nTVWarpCD\ta"},
+            {"236C~236D", "TvHit_C\nTVWarpD\ta"},
+            {"236C~236CD", "TvHit_C\nTVWarpCD\ta"},
 
             {"236D~236C", "TvHit_D\nTVWarpC\ta"},
             {"236D~236D", "TvHit_D\nTVWarpD\ta"},
             {"236D~236CD", "TvHit_D\nTVWarpCD\ta"},
 
-            {"236CD~236C", "TvHit_CD\nTVWarpC\ta"},
-            {"236CD~236D", "TvHit_CD\nTVWarpD\ta"},
-            {"236CD~236CD", "TvHit_CD\nTVWarpCD\ta"},
+            {"236CD~236C", "Tvwarp\t+TvHit_CD\nTVWarpC\ta"},
+            {"236CD~236D", "Tvwarp\t+TvHit_CD\nTVWarpD\ta"},
+            {"236CD~236CD", "Tvwarp\t+TvHit_CD\nTVWarpCD\ta"},
 
             //Teddivision Held
-            {"236[D]", "HoldTv_D\ta"},
+            {"236[D]", "HoldTv_D"},
 
             //Teddie Warp Delayed Teleport
             {"236C(Warp)", "TVWarpC\ta"},
@@ -978,9 +979,9 @@
             {"236236CD(Hold)", "MissileCD\nMissileBomb"},
 
             //Tomahawk (Air)
-            {"j.236236C", "AirMissileC"},
-            {"j.236236D", "AirMissileD"},
-            {"j.236236CD", "AirMissileCD"},
+            {"j.236236C", "AirMissileC\t|MissileC\t|MissileBomb"},
+            {"j.236236D", "AirMissileD\t|MissileD\t|MissileBomb"},
+            {"j.236236CD", "AirMissileCD\t|MissileCD\t|MissileBomb"},
 
             //Tomahawk (Air/Held)
             {"j.236236C(Hold)", "AirMissileC\nMissileBomb"},
@@ -992,19 +993,19 @@
             {"Tomahawk D(Explosion)", "MissileBomb"},
 
             //Mystery Teddie SP
-            {"236236A", "UltimateItem\t+UltimateItem_hatudou\ta"},
-            {"236236B", "UltimateItem\t+UltimateItem_hatudou\ta"},
+            {"236236A", "UltimateItemA\t|UltimateItemB\t|AirUltimateItemA\t|AirUltimateItemB\t+UltimateItem\ta"},
+            {"236236B", "UltimateItemA\t|UltimateItemB\t|AirUltimateItemA\t|AirUltimateItemB\t+UltimateItem\ta"},
             {"236236AB", "UltimateItemAB\ta"},
 
             //Mystery Teddie SP (Air)
-            {"j.236236A", "AirUltimateItem\t+UltimateItem_hatudou\ta"},
-            {"j.236236B", "AirUltimateItem\t+UltimateItem_hatudou\ta"},
+            {"j.236236A", "UltimateItemA\t|UltimateItemB\t|AirUltimateItemA\t|AirUltimateItemB\t+UltimateItem\ta"},
+            {"j.236236B", "UltimateItemA\t|UltimateItemB\t|AirUltimateItemA\t|AirUltimateItemB\t+UltimateItem\ta"},
             {"j.236236AB", "AirUltimateItemABset\ta"},
 
             //Circus Bear
             {"214214C", "UltimateGorogoroTamaC"},
             {"214214D", "UltimateGorogoroTamaD"},
-            {"214214CD", "UltimateGorogoroTamaCD"},
+            {"214214CD", "UltimateGorogoroTamaC\t+UltimateGorogoroTamaCD"},
 
             //Nihil Hand
             {"214214A", "UltimateNihilA"},
@@ -2273,25 +2274,25 @@
             {"5B", "5B_Atk"},
 
             //5B (Charged)
-            {"5[B]", "5B_Atk_Charge"},
+            {"5[B]", "5B_Atk\t+5B_Atk_Charge"},
 
             //2B
             {"2B", "2B_Atk"},
 
             //2B (Charged)
-            {"2[B]", "2B_Atk_Charge"},
+            {"2[B]", "2B_Atk\t+2B_Atk_Charge"},
 
             //j.B
             {"j.B", "Air5B_Atk"},
 
             //j.B (Charged)
-            {"j.[B]", "Air5B_Atk_Charge"},
+            {"j.[B]", "Air5B_Atk\t+Air5B_Atk_Charge"},
 
             //j.2B
             {"j.2B", "Air2B_Atk"},
 
             //j.2B (Charged)
-            {"j.2[B]", "Air2B_Atk_Charge"},
+            {"j.2[B]", "Air2B_Atk\t+Air2B_Atk_Charge"},
 
             //5D
             {"5D", "5D_Atk"},
@@ -2328,14 +2329,14 @@
             {"Bomb(Explosion)", "eff_MatoNage_Atk"},
 
             //Magaru
-            {"214C", "eff_MahaGaruC_dmy\ta"},
-            {"214D", "eff_MahaGaruD_dmy\ta"},
-            {"214CD", "eff_MahaGaruCD_dmy\ta"},
+            {"214C", "eff_MahaGaruC_dmy"},
+            {"214D", "eff_MahaGaruD_dmy"},
+            {"214CD", "eff_MahaGaruCD_dmy"},
 
             //Magaru (Air)
-            {"j.214C", "eff_MahaGaruC_dmy\ta"},
-            {"j.214D", "eff_MahaGaruD_dmy\ta"},
-            {"j.214CD", "eff_MahaGaruCD_dmy\ta"},
+            {"j.214C", "eff_MahaGaruC_dmy"},
+            {"j.214D", "eff_MahaGaruD_dmy"},
+            {"j.214CD", "eff_MahaGaruCD_dmy"},
 
             //Feather Flip ~ Feather Shot A
             {"236C~A", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowCharm"},
@@ -2410,7 +2411,8 @@
             //Magarula
             {"214214C", "eff_UltimateMahaGaru_Front"},
             {"214214D", "eff_UltimateMahaGaru_Back"},
-            {"214214CD", "eff_UltimateMahaGaruCD"},
+            {"214214CD(Front)", "eff_UltimateMahaGaru_Front\r\neff_UltimateMahaGaruCD"},
+            {"214214CD(Back)", "eff_UltimateMahaGaru_Back\r\neff_UltimateMahaGaruCD"},
 
             //IK
             {"IK", "IchigekiArrowFinish_Atk"},
