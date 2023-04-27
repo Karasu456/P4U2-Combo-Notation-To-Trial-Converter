@@ -318,8 +318,8 @@
 
             //Mirage Slash
             {"j.2C", "WarpLowSlashC"},
-            {"j.2D", "WarpLowSlashD"},
-            {"j.2CD", "WarpLowSlashCD"},
+            {"j.2D", "WarpLowSlashD\ta"},
+            
 
             //Garudyne
             {"236236C", "Tatsumaki"},
@@ -342,6 +342,7 @@
             {"5AAA(Sukukaja)", "Sukukaja5A_3rd"},
             {"5AAAA(Sukukaja)", "Sukukaja5A_4th"},
             {"5AAAAA(Sukukaja)", "Sukukaja5A_Finish"},
+            {"5AAAAAA(Sukukaja)", ""},
             
             //Shippu - Nagareboshi
             {"214214C(Shippu)", "UltimateKunaiC"},
@@ -933,7 +934,7 @@
             {"214AB", "MoudokuTsumeAB"},
 
             //Puppeteddie (Air)
-            {"j.214A", "AirMoudokuTsumeA\t|MoudokuTsumeA"},
+            {"j.214A", "MoudokuTsumeA"},
             {"j.214B", "MoudokuTsumeB"},
             {"j.214AB", "MoudokuTsumeAB"},
             
@@ -964,7 +965,7 @@
             {"236CD(Warp)", "TVWarpCD\ta"},
 
             //2D Teddie
-            {"22A", "TsubureruKumaA"},
+            {"22A", "TsubureruKumaA\ta"},
 
             //Tomahawk
             {"236236C", "MissileC"},
@@ -2213,9 +2214,9 @@
             {"214214AB", "UltimateFullswingAB"},
 
             //Titanomachia
-            {"214214C", "UltimateProgramC"},
-            {"214214D", "UltimateProgramD"},
-            {"214214CD", "UltimateProgramCD"},
+            {"214214C", "UltimateProgramC\ta"},
+            {"214214D", "UltimateProgramD\ta"},
+            {"214214CD", "UltimateProgramCD\ta"},
 
             {"Titanomachia(Finish)", "ProgramFinish"},
 
