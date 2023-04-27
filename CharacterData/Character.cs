@@ -322,12 +322,12 @@
             {"j.2CD", "WarpLowSlashCD"},
 
             //Garudyne
-            {"236236C", "TatsumakiC"},
+            {"236236C", "Tatsumaki"},
             {"236236D", "TatsumakiD"},
             {"236236CD", "TatsumakiCD"},
 
             //Garudyne (Air)
-            {"j.236236C", "TatsumakiC"},
+            {"j.236236C", "Tatsumaki"},
             {"j.236236D", "TatsumakiD"},
             {"j.236236CD", "TatsumakiCD"},
 
@@ -988,7 +988,7 @@
             //Mystery Teddie SP
             {"236236A", "UltimateItem\t+UltimateItem_hatudou\ta"},
             {"236236B", "UltimateItem\t+UltimateItem_hatudou\ta"},
-            {"236236AB", "AirUltimateItemAB\ta"},
+            {"236236AB", "UltimateItemAB\ta"},
 
             //Mystery Teddie SP (Air)
             {"j.236236A", "AirUltimateItem\t+UltimateItem_hatudou\ta"},
@@ -2279,7 +2279,7 @@
             {"j.B", "Air5B_Atk"},
 
             //j.B (Charged)
-            {"j.[B]", "Atk_Charge"},
+            {"j.[B]", "Air5B_Atk_Charge"},
 
             //j.2B
             {"j.2B", "Air2B_Atk"},
@@ -2360,6 +2360,36 @@
             {"236C~CD", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowBoth"},
             {"236D~CD", "MoonsaltJumpD\ta\tn2miss\r\nMoonsaltArrowBoth"},
             {"236CD~CD", "MoonsaltJumpCD\ta\tn2miss\r\nMoonsaltArrowBoth"},
+
+            //Aerial Feather Flip ~ Feather Shot A
+            {"j.236C~A", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowCharm"},
+            {"j.236D~A", "MoonsaltJumpD\ta\tn2miss\r\nMoonsaltArrowCharm"},
+            {"j.236CD~A", "MoonsaltJumpCD\ta\tn2miss\r\nMoonsaltArrowCharm"},
+
+            //Aerial Feather Flip ~ Feather Shot B
+            {"j.236C~B", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowConfuse"},
+            {"j.236D~B", "MoonsaltJumpD\ta\tn2miss\r\nMoonsaltArrowConfuse"},
+            {"j.236CD~B", "MoonsaltJumpCD\ta\tn2miss\r\nMoonsaltArrowConfuse"},
+
+            //Aerial Feather Flip ~ Feather Shot C
+            {"j.236C~C", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowCharm"},
+            {"j.236D~C", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowCharm"},
+            {"j.236CD~C", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowCharm"},
+
+            //Aerial Feather Flip ~ Feather Shot D
+            {"j.236C~D", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowConfuse"},
+            {"j.236D~D", "MoonsaltJumpD\ta\tn2miss\r\nMoonsaltArrowConfuse"},
+            {"j.236CD~D", "MoonsaltJumpCD\ta\tn2miss\r\nMoonsaltArrowConfuse"},
+
+            //Aerial Feather Flip ~ Feather Shot AB
+            {"j.236C~AB", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowBoth"},
+            {"j.236D~AB", "MoonsaltJumpD\ta\tn2miss\r\nMoonsaltArrowBoth"},
+            {"j.236CD~AB", "MoonsaltJumpCD\ta\tn2miss\r\nMoonsaltArrowBoth"},
+
+            //Aerial Feather Flip ~ Feather Shot CD
+            {"j.236C~CD", "MoonsaltJumpC\ta\tn2miss\r\nMoonsaltArrowBoth"},
+            {"j.236D~CD", "MoonsaltJumpD\ta\tn2miss\r\nMoonsaltArrowBoth"},
+            {"j.236CD~CD", "MoonsaltJumpCD\ta\tn2miss\r\nMoonsaltArrowBoth"},
 
             //Hyper Feather Shot
             {"236236A", "UltimateArrow_AtkA"},
