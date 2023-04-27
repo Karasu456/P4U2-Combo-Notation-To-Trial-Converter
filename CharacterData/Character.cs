@@ -587,7 +587,7 @@
             //Agi
             {"236A", "LandAgiA"},
             {"236B", "LandAgiB"},
-            {"236AB", "LandAgiAB"},
+            {"236AB", "LandAgirao"},
 
             //Agi (Air)
             {"j.236A", "AirAgiA"},
@@ -595,10 +595,10 @@
             {"j.236AB", "AirAgirao"},
 
             //Agi Release
-            {"A(Release)", "AgishotA"},
-            {"B(Release)", "AgishotB"},
-            {"A(SB - Release)", "AgishotAB"},
-            {"B(SB - Release)", "AgishotAB2nd"},
+            {"A(Explosion)", "AgishotA"},
+            {"B(Explosion)", "AgishotB"},
+            {"A(SB - Explosion)", "AgishotAB"},
+            {"B(SB - Explosion)", "AgishotAB2nd"},
 
             //Maragi
             {"236C", "MaharagiC"},
@@ -606,9 +606,9 @@
             {"236CD", "Maharagion"},
 
             //Fire Boost/Break/Amp
-            {"214C", "FireBoosterC"},
-            {"214D", "FireBoosterD"},
-            {"214CD", "FireBoosterCD"},
+            {"214C", "FireBoosterC\ta"},
+            {"214D", "FireBoosterD\ta"},
+            {"214CD", "FireBoosterCD\ta"},
 
             //Flame Dance
             {"214A", "PersonaFireAttackA"},
@@ -620,6 +620,11 @@
             {"214214B", "PersonaFireBirdB"},
             {"214214AB", "PersonaFireBirdAB"},
 
+            //Phoenix Flame Swirl (Air)
+            {"j.214214A", "PersonaFireBirdA"},
+            {"j.214214B", "PersonaFireBirdB"},
+            {"j.214214AB", "PersonaFireBirdAB"},
+
             //Agidyne
             {"236236C", "AgidineC"},
             {"236236D", "AgidineD"},
@@ -628,7 +633,7 @@
             //Maragidyne
             {"214214C", "MaharagidineC_Frontfire_col\t|MaharagidineC_Backfire_col"},
             {"214214D", "MaharagidineD_Frontfire_col\t|MaharagidineD_Backfire_col"},
-            {"214214CD", "MaharagidineCD_Frontfire_col\t|MaharagidineCD_Backfire_col"},
+            {"214214CD", "MaharagidineCD_col\t+MaharagidineCD_Frontfire_col"},
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
@@ -3262,9 +3267,9 @@
             {"214CD", "TetraKhanCD\ta"},
 
             //Arrow Rain
-            {"22A", "rp406_atka_col\ta"},
-            {"22B", "rp406_atkb_col\ta"},
-            {"22AB", "rp406_atkab_col\ta"},
+            {"22A", "rp406_atka_col"},
+            {"22B", "rp406_atkb_col"},
+            {"22AB", "rp406_atkab_col"},
 
             //Hysterical Slap
             {"236236A", "UltimateHysterieBintaA"},
