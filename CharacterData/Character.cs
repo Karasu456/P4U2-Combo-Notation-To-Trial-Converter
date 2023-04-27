@@ -319,6 +319,7 @@
             //Mirage Slash
             {"j.2C", "WarpLowSlashC"},
             {"j.2D", "WarpLowSlashD\ta"},
+            {"j.2CD", "WarpLowSlashCD\tnOnly"},
             
 
             //Garudyne
@@ -2219,7 +2220,7 @@
             {"214214D", "UltimateProgramD\ta"},
             {"214214CD", "UltimateProgramCD\ta"},
 
-            {"Titanomachia(Finish)", "ProgramFinish"},
+            {"Titanomachia(Finish)", "ProgramFinish\tnOnly"},
 
             //Titanomachia (Air)
             {"j.214214C", "UltimateProgramC"},
@@ -3294,9 +3295,9 @@
             {"D(Explosion)", "rpef_431_BombAtk"},
 
             //Risette: Live on Stage
-            {"214214C", "UltimateRiseMusicGameC\r\nRiseMusicGame_Atk"},
-            {"214214D", "UltimateRiseMusicGameD\r\nRiseMusicGame_Atk"},
-            {"214214CD", "UltimateRiseMusicGameCD\r\nRiseMusicGame_Atk"},
+            {"214214C", "UltimateRiseMusicGameC\r\nRiseMusicGame_Atk\tnOnly"},
+            {"214214D", "UltimateRiseMusicGameD\r\nRiseMusicGame_Atk\tnOnly"},
+            {"214214CD", "UltimateRiseMusicGameCD\r\nRiseMusicGame_Atk\tnOnly"},
 
             //IK
             {"IK", "rief450_atk"},
