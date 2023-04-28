@@ -1717,8 +1717,8 @@
             {"BD", "r_action_land"},
 
             //Escape Change (Air)
-            {"j.DP", "r_action_land"},
-            {"j.BD", "r_action_land"},
+            {"j.DP", "r_action_air"},
+            {"j.BD", "r_action_air"},
 
             //Mode Change
             {"22A", "ModeChangeA\ta\t|ModeChangeB\ta\t+ModeChange"},
@@ -3850,7 +3850,7 @@
             {"222CD", "Ichigeki_Atk"},
         };
         private static bool dictionariesBuilt = false;
-        private readonly static List<string> invalidActions = new() { "DP", "BD", "IK", "222CD", "5DD", "j.BB", "j.AB", "j.2A" };
+        private readonly static List<string> invalidActions = new() {"IK", "222CD", "5DD", "j.BB", "j.AB", "j.2A" };
         public static Dictionary<string, string> Dictionary
         {
             get { return workingDictionary; }
