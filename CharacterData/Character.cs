@@ -2501,8 +2501,8 @@
             {"j.B(Clean)", "NmlAtkAir5BClean"},
 
             //Super Flamingo Swing
-            {"DP", "ReversalActionKamae\ta"},
-            {"BD", "ReversalActionKamae\ta"},
+            {"DP", "ReversalAction\ta\tn2miss\t+ReversalActionKamae"},
+            {"BD", "ReversalAction\ta\tn2miss\t+ReversalActionKamae"},
 
             //Super Flamingo Swing (Hit)
             {"DP(Hit)", "ReversalAction"},
