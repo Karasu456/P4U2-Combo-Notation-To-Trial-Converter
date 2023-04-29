@@ -111,6 +111,10 @@
             {"214D", "PersonaLowAssaultD"},
             {"214CD", "PersonaLowAssaultCD"},
 
+            //Ziocar - Swift Strike (CD) ~ Big Gamble
+            {"214CD~BD", "PersonaLowAssaultCD\r\nReversalActionAdd"},
+            {"214CD~DP", "PersonaLowAssaultCD\r\nReversalActionAdd"},
+
             //Heroic Bravery
             {"236A", "DashAssaultA"},
             {"236B", "DashAssaultB"},
