@@ -551,10 +551,10 @@
             this.enemyHPRecoveryCheckBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.enemyHPRecoveryCheckBox.Location = new System.Drawing.Point(129, 53);
             this.enemyHPRecoveryCheckBox.Name = "enemyHPRecoveryCheckBox";
-            this.enemyHPRecoveryCheckBox.Size = new System.Drawing.Size(114, 19);
+            this.enemyHPRecoveryCheckBox.Size = new System.Drawing.Size(124, 19);
             this.enemyHPRecoveryCheckBox.TabIndex = 6;
             this.enemyHPRecoveryCheckBox.TabStop = false;
-            this.enemyHPRecoveryCheckBox.Text = "E-HP Recovery?";
+            this.enemyHPRecoveryCheckBox.Text = "Heal Enemy Only?";
             this.enemyHPRecoveryCheckBox.UseVisualStyleBackColor = true;
             this.enemyHPRecoveryCheckBox.CheckedChanged += new System.EventHandler(this.EnemyHPRecoveryCheckBox_CheckedChanged);
             // 
@@ -603,10 +603,10 @@
             this.playerHPRecoveryCheckBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.playerHPRecoveryCheckBox.Location = new System.Drawing.Point(3, 53);
             this.playerHPRecoveryCheckBox.Name = "playerHPRecoveryCheckBox";
-            this.playerHPRecoveryCheckBox.Size = new System.Drawing.Size(103, 19);
+            this.playerHPRecoveryCheckBox.Size = new System.Drawing.Size(131, 19);
             this.playerHPRecoveryCheckBox.TabIndex = 2;
             this.playerHPRecoveryCheckBox.TabStop = false;
-            this.playerHPRecoveryCheckBox.Text = "HP Recovery?";
+            this.playerHPRecoveryCheckBox.Text = "Heal After Combo?";
             this.playerHPRecoveryCheckBox.UseVisualStyleBackColor = true;
             this.playerHPRecoveryCheckBox.CheckedChanged += new System.EventHandler(this.PlayerHPRecoveryCheckBox_CheckedChanged);
             // 
