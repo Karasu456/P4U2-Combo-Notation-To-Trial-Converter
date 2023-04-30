@@ -49,8 +49,8 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
             {"SP\t100", "Full SP"},            
             {"Kakusei", "Awakening"},
             {"Ichigeki", "Instant Kill Ready"},
-            {"HPRecovery", "HP Recovery"},
-            {"HPRecoveryEnemyOnly", "E-HP Recovery"},
+            {"HPRecover\t0", "HP Recovery"},
+            {"HPRecoverEnemyOnly\t0", "E-HP Recovery"},
             {"Konran", "Player Panic"},
             {"Kanden", "Player Shock"},
             {"PersonaBreak", "Persona Broken"},
@@ -835,13 +835,13 @@ namespace P4U2_Combo_Notation_To_Trial_Converter
 
         private void PlayerHPRecoveryCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            CheckBoxChanged(playerHPRecoveryCheckBox, "HPRecovery", trialSettings);
+            CheckBoxChanged(playerHPRecoveryCheckBox, "HPRecover\t0", trialSettings);
             RefreshTrialSettingsDataGridView(trialSettings);
         }
 
         private void EnemyHPRecoveryCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            CheckBoxChanged(enemyHPRecoveryCheckBox, "HPRecoveryEnemyOnly", trialSettings);
+            CheckBoxChanged(enemyHPRecoveryCheckBox, "HPRecoverEnemyOnly\t0", trialSettings);
             RefreshTrialSettingsDataGridView(trialSettings);
         }
 
