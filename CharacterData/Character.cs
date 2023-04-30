@@ -44,8 +44,8 @@
                 {"Air Backdash", "CmnBAirDash\ti\tc"},
                 {"66","_Dash\t+CmnActFDash\ti\tc"},
                 {"Dash Cancel","_Dash\t+CmnActFDash\ti\tc"},
-                {"44", "_BDash\t+CmnActBDash\ti\tc"},
-                {"Backdash", "_BDash\t+CmnActBDash\ti\tc"},
+                {"44", "CmnBDash\t+CmnActBDash\ti\tc"},
+                {"Backdash", "CmnBDash\t+CmnActBDash\ti\tc"},
                 {"IAD", "CmnFAirDash\ti\tc"},
                 {"IAD(Back)", "CmnBAirDash\ti\tc"},
 
