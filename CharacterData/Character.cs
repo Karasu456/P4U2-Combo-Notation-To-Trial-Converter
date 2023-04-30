@@ -155,7 +155,7 @@
                 "\nUltimateWildRush_3rd\r\nUltimateWildRush_4th\r\nUltimateWildRush_5th\r" +
                 "\nUltimateWildRush_6th\r\nUltimateWildRush_7th\r\nUltimateWildRush_8th\r" +
                 "\nUltimateWildRush_9th\r\nPersonaUltimateWildFinish"},
-            {"Thunder God Dance!(nOnly)", "UltimateWildRush\tnOnly\r\nPersonaUltimateWildFinish\tnOnly"}
+            {"Thunder God Dance!(nOnly)", "UltimateWildRush\tnOnly\r\nUltimateWildRush_9th\tnOnly\r\nPersonaUltimateWildFinish\tnOnly"}
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
