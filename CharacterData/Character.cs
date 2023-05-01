@@ -17,7 +17,7 @@
                 {"5B", "NmlAtk5B\tc"},
                 {"5C", "Persona5C\tc"},
                 {"5D", "Persona5D\tc"},
-                {"5DD", "NmlAtk5D2nd\tc"},
+                {"5DD", "NmlAtk5D2nd\ti\tc"},
                 {"2A", "NmlAtk2A\tc"},
                 {"2B", "NmlAtk2B\tc"},
                 {"2C", "Persona2C\tc"},
