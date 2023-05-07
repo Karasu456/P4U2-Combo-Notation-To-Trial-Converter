@@ -429,7 +429,10 @@
             //2DD
             {"2DD", "Persona2D2nd\t+NmlAtk5D2nd\tc\tNandodemo"},
 
-            //j.D Variant
+            //j.D Variants
+            {"j.6D", "PersonaAir5D"},
+            {"j.4D", "PersonaAir5D"},
+            {"j.2D", "PersonaAir5D"},
             {"j.8D", "PersonaAir8D"},
 
             //High Counter (Air)
