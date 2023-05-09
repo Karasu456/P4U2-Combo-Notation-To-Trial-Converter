@@ -358,9 +358,9 @@
             {"214214CD(Shippu)", "UltimateKunaiCD"},
 
             //Shippu - Nagareboshi (Air)
-            {"j.214214C(Shippu)", "UltimateKunaiC"},
-            {"j.214214D(Shippu)", "UltimateKunaiD"},
-            {"j.214214CD(Shippu)", "UltimateKunaiCD"},
+            {"j.214214C", "UltimateKunaiC"},
+            {"j.214214D", "UltimateKunaiD"},
+            {"j.214214CD", "UltimateKunaiCD"},
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
