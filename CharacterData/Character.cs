@@ -65,7 +65,7 @@
                 {"Roll", "CmnSurinuke\ti\tc"},
                 {"2AC", "CmnMiniJump\ti\tc"},
                 {"Hop", "CmnMiniJump\ti\tc"},
-                {"Superjump", "_HighJump\tc\tnOnly"},               
+                {"Superjump", "_HighJump\ta\tc\tnOnly"},               
                 {"Air Turn", "CmnAirTurn\ti\tc"},
                 {"j.AC", "CmnAirTurn\ti\tc"},
                 {"BD", "ReversalAction"},
