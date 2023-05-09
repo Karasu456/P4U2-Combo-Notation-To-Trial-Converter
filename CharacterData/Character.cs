@@ -2242,8 +2242,8 @@
             {"j.214214CD", "UltimateProgramCD"},
 
             //IK
-            {"IK(Set)", "IchigekiJunbi"},
-            {"222CD(Set)", "IchigekiJunbi"},
+            {"IK(Set)", "IchigekiJunbi\ta"},
+            {"222CD(Set)", "IchigekiJunbi\ta"},
         };
         private static bool dictionariesBuilt = false;
         private readonly static List<string> invalidActions = new() { "5DD", "j.AB", "j.2A", "j.2C", "j.2D" };
