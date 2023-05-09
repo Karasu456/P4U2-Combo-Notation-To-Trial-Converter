@@ -75,6 +75,7 @@
                 {"One More Burst!", "CmnCancelBurst\ti\tc"},
                 {"OMB", "CmnCancelBurst\ti\tc"},
                 {"Awaken", "_Kakusei\ti\tc"},
+                {"Defensive Burst", "CmnDamageBurst\tc\ti" },
             };
         }
     }
