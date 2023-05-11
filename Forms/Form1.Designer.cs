@@ -41,11 +41,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.trialDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trialSettingsDataGridView = new System.Windows.Forms.DataGridView();
-            this.trialSettingColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trialSettingDataColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -85,6 +81,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.characterSpecificSettingsTimer = new System.Windows.Forms.Timer(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trialSettingColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trialSettingDataColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.SuspendLayout();
@@ -220,24 +220,6 @@
             this.trialDataGridView.TabIndex = 45;
             this.trialDataGridView.TabStop = false;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Inputs";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Combo Trial Data -LIST-";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn2.Width = 212;
-            // 
             // trialSettingsDataGridView
             // 
             this.trialSettingsDataGridView.AllowUserToAddRows = false;
@@ -261,24 +243,6 @@
             this.trialSettingsDataGridView.Size = new System.Drawing.Size(365, 109);
             this.trialSettingsDataGridView.TabIndex = 44;
             this.trialSettingsDataGridView.TabStop = false;
-            // 
-            // trialSettingColumn
-            // 
-            this.trialSettingColumn.HeaderText = "Settings";
-            this.trialSettingColumn.Name = "trialSettingColumn";
-            this.trialSettingColumn.ReadOnly = true;
-            this.trialSettingColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.trialSettingColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.trialSettingColumn.Width = 150;
-            // 
-            // trialSettingDataColumn
-            // 
-            this.trialSettingDataColumn.HeaderText = "Setting Trial Data";
-            this.trialSettingDataColumn.Name = "trialSettingDataColumn";
-            this.trialSettingDataColumn.ReadOnly = true;
-            this.trialSettingDataColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.trialSettingDataColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.trialSettingDataColumn.Width = 212;
             // 
             // label10
             // 
@@ -802,6 +766,42 @@
             this.characterSpecificSettingsTimer.Interval = 1;
             this.characterSpecificSettingsTimer.Tick += new System.EventHandler(this.CharacterSpecificSettingsTimer_Tick);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Inputs";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Combo Trial Data -LIST-";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn2.Width = 195;
+            // 
+            // trialSettingColumn
+            // 
+            this.trialSettingColumn.HeaderText = "Settings";
+            this.trialSettingColumn.Name = "trialSettingColumn";
+            this.trialSettingColumn.ReadOnly = true;
+            this.trialSettingColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.trialSettingColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.trialSettingColumn.Width = 150;
+            // 
+            // trialSettingDataColumn
+            // 
+            this.trialSettingDataColumn.HeaderText = "Setting Trial Data";
+            this.trialSettingDataColumn.Name = "trialSettingDataColumn";
+            this.trialSettingDataColumn.ReadOnly = true;
+            this.trialSettingDataColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.trialSettingDataColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.trialSettingDataColumn.Width = 195;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -888,10 +888,10 @@
         private DataGridView trialSettingsDataGridView;
         private System.Windows.Forms.Timer characterSpecificSettingsTimer;
         private DataGridView trialDataGridView;
+        private RichTextBox comboInputTextBox;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn trialSettingColumn;
         private DataGridViewTextBoxColumn trialSettingDataColumn;
-        private RichTextBox comboInputTextBox;
     }
 }
