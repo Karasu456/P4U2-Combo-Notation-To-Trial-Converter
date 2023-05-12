@@ -225,7 +225,7 @@
         private readonly static Dictionary<string, string> workingDictionary = new()
         {
             //j.AA
-            {"j.AA", "NmlAtkAir5B\tc"},
+            {"j.AA", "NmlAtkAir5B\t+NmlAtkAir5A\tc"},
 
             //Dash Spring
             {"236A", "KakeagariA"},
