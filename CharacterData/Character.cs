@@ -589,6 +589,8 @@
             {"4B", "Sensu_5B"},
             {"4BB", "Sensu_5B\nSensu_5B2nd"},
             {"2B", "Sensu_2B"},
+            {"3B", "Sensu_2B"},
+            {"1B", "Sensu_2B"},
 
             //Sensu (Air)
             {"j.6B", "Sensu_Air5B"},
