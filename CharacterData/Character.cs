@@ -519,7 +519,7 @@
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
-        private readonly static List<string> invalidActions = new() { "j.2A", "j.2C", "j.2D" };
+        private readonly static List<string> invalidActions = new() { "j.2A", "j.2C" };
         public static Dictionary<string, string> Dictionary
         {
             get { return workingDictionary; }
