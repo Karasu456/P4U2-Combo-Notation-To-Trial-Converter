@@ -654,6 +654,9 @@
             {"214214C", "MaharagidineC_Frontfire_col\t|MaharagidineC_Backfire_col"},
             {"214214D", "MaharagidineD_Frontfire_col\t|MaharagidineD_Backfire_col"},
             {"214214CD", "MaharagidineCD_col\t+MaharagidineCD_Frontfire_col"},
+
+            //IK
+            {"IK", "PersonaIchigeki"},
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
