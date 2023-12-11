@@ -1587,6 +1587,14 @@
     {
         private readonly static Dictionary<string, string> workingDictionary = new()
         {
+            //5D
+            {"5D", "NmlAtk5D\ta\tc"},
+            {"5[D]", "NmlAtk5D\ta\tc"},
+
+            //j.D
+            {"j.D", "NmlAtkAir5D\ta\tc"},
+            {"j.[D]", "NmlAtkAir5D\ta\tc"},
+
             //Kill Rush
             {"236A", "RushA"},
             {"236B", "RushB"},
@@ -1604,6 +1612,7 @@
             //Boomerang Hook
             {"4A", "BodyBlowA"},
             {"4B", "BodyBlowB"},
+            {"4[B]", "BodyBlowB"},
             {"4AB", "BodyBlowAB"},
 
             //Sonic Punch
@@ -1654,7 +1663,7 @@
         };
         private readonly static Dictionary<string, string> workingDictionary_S = new();
         private static bool dictionariesBuilt = false;
-        private readonly static List<string> invalidActions = new() { "IK", "222CD", "5DD", "j.BB", "j.AB", "j.2A", "j.2B", "j.2C", "j.2D" };
+        private readonly static List<string> invalidActions = new() { "IK", "222CD", "5D", "5DD", "j.BB", "j.AB", "j.2A", "j.2B", "j.2C", "j.2D" };
         public static Dictionary<string, string> Dictionary
         {
             get { return workingDictionary; }
